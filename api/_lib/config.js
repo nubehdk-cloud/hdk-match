@@ -58,5 +58,17 @@ export const FALLBACK_GAMES = [
   {id:'fb-fmp-20270417',sourceId:'fmp_infantil',source:'FMP',competition:'Liga Infantil 1',sport:'line',players:['andres'],date:'2027-04-17',time:null,home:'CPLM A',away:'Las Rozas',venue:null}
 ];
 
+
+// Eventos especiales/no oficiales tomados del calendario familiar.
+// No se publican IDs, enlaces ni otros datos privados del calendario.
+export const CALENDAR_EXTRAS = [
+  {id:'cal-u13-jaca-20261010',sourceId:'calendar',source:'Calendar',special:true,title:'Festival U13 · Jaca · Gastón',competition:'Festival U13',sport:'ice',players:['gaston'],date:'2026-10-10',endDate:'2026-10-11',time:null,place:'away',venue:'Jaca'},
+  {id:'cal-boston-prep-20261011',sourceId:'calendar',source:'Calendar',competition:'AROK Boston U17 · Preparación',sport:'ice',players:['andres'],date:'2026-10-11',time:'19:30',home:'AROK Boston U17',away:'Majadahonda U18',place:'home',venue:'Majadahonda'},
+  {id:'cal-boston-prep-20261012',sourceId:'calendar',source:'Calendar',competition:'AROK Boston U17 · Preparación',sport:'ice',players:['andres'],date:'2026-10-12',time:'11:00',home:'AROK Boston U17',away:'Majadahonda U18',place:'home',venue:'Majadahonda'},
+  {id:'cal-int-cup-20261031',sourceId:'calendar',source:'Calendar',special:true,title:'International Cup U15 · Donosti',competition:'International Cup U15 by Karlos Gordovil',sport:'ice',players:['andres','gaston'],date:'2026-10-31',endDate:'2026-11-01',time:null,place:'away',venue:'Donostia-San Sebastián'},
+  {id:'cal-boston-friendly-20261201',sourceId:'calendar',source:'Calendar',competition:'AROK Boston U17 · Amistoso',sport:'ice',players:['andres'],date:'2026-12-01',time:null,home:'AROK Boston U17',away:'North Shore Academy',place:'away',venue:'Boston, Massachusetts'},
+  {id:'cal-boston-tournament-20261204',sourceId:'calendar',source:'Calendar',special:true,title:'Boston · Torneo · 4 partidos',competition:'AROK Boston U17 · Torneo',sport:'ice',players:['andres'],date:'2026-12-04',endDate:'2026-12-06',time:null,place:'away',venue:'Boston, Massachusetts'}
+];
+
 // Excepciones añadidas manualmente cuando no están en las federaciones.
 export const MANUAL_GAMES = [];
