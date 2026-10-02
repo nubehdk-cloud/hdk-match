@@ -47,17 +47,14 @@ def norm(s):
     s=s.replace("Á","A").replace("É","E").replace("Í","I").replace("Ó","O").replace("Ú","U").replace("Ü","U").replace("Ñ","N")
     return re.sub(r"[^A-Z0-9]+"," ",s).strip()
 
-def fetch(url):
-    req=Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; HdKMatchBot/1.0)","Accept":"text/html,application/xhtml+xml,text/plain"})
-    try:
-        with urlopen(req,timeout=25) as r:
-            data=r.read().decode("utf-8","replace")
-        if "Próximos Partidos" in data or "Proximos Partidos" in data:
-            return data
-    except Exception:
-        pass
+def fetch_direct(url):
+    req=Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; HdKMatchBot/1.1)","Accept":"text/html,application/xhtml+xml,text/plain"})
+    with urlopen(req,timeout=25) as r:
+        return r.read().decode("utf-8","replace")
+
+def fetch_reader(url):
     reader="https://r.jina.ai/http://"+url.split("://",1)[1]
-    req=Request(reader,headers={"User-Agent":"Mozilla/5.0 (compatible; HdKMatchBot/1.0)"})
+    req=Request(reader,headers={"User-Agent":"Mozilla/5.0 (compatible; HdKMatchBot/1.1)"})
     with urlopen(req,timeout=30) as r:
         return r.read().decode("utf-8","replace")
 
@@ -96,8 +93,7 @@ def apply_hint(g):
             if not g.get("venue") and h.get("venue"): g["venue"]=h["venue"]
     return g
 
-def parse_source(src):
-    raw=fetch(src["url"])
+def parse_text(src, raw):
     text=upcoming(to_text(raw))
     teams=sorted(set(src["teams"]),key=len,reverse=True)
     alt="|".join(re.escape(x) for x in teams)
@@ -124,11 +120,21 @@ def parse_source(src):
           "official":True
         }
         games.append(apply_hint(g))
-    uniq={g["id"]:g for g in games}
-    if not uniq:
-        sample=re.sub(r"\s+"," ",text)[:700]
-        raise RuntimeError(f'0 partidos interpretados; muestra={sample}')
-    return list(uniq.values())
+    return list({g["id"]:g for g in games}.values()), text
+
+def parse_source(src):
+    errors=[]
+    for mode,fetcher in (("direct",fetch_direct),("reader",fetch_reader)):
+        try:
+            raw=fetcher(src["url"])
+            games,text=parse_text(src,raw)
+            if games:
+                print(src["id"],"via",mode)
+                return games
+            errors.append(f"{mode}: 0 partidos; muestra={re.sub(r'\s+',' ',text)[:350]}")
+        except Exception as e:
+            errors.append(f"{mode}: {e}")
+    raise RuntimeError(" | ".join(errors))
 
 def main():
     all_games=[]; status=[]
