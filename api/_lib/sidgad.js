@@ -1,4 +1,4 @@
-import { SOURCES, MANUAL_GAMES } from './config.js';
+import { SOURCES, FALLBACK_GAMES, MANUAL_GAMES } from './config.js';
 
 const pad2 = v => String(v).padStart(2, '0');
 const normalize = (s='') => String(s).toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^A-Z0-9]+/g,' ').trim();
@@ -244,7 +244,25 @@ export async function loadGames() {
       status.push({id:source.id,label:source.label,ok:false,error:String(e?.message||e)});
     }
   }));
+  const now = new Date();
+  for (const source of SOURCES) {
+    const sourceGames = all.filter(g=>g.sourceId===source.id);
+    const hasUpcoming = sourceGames.some(g=>new Date(`${g.date}T${g.time||'23:59'}:00`) >= now);
+    if (!hasUpcoming) {
+      const fallback = FALLBACK_GAMES.filter(g=>g.sourceId===source.id && new Date(`${g.date}T${g.time||'23:59'}:00`) >= now)
+        .map(g=>({...g,fallback:true,sourceUrl:`${source.website}/league/${source.leagueId}`}));
+      all.push(...fallback);
+      const st=status.find(s=>s.id===source.id);
+      if(st){ st.fallback=true; st.fallbackGames=fallback.length; }
+    }
+  }
   all.push(...MANUAL_GAMES.map((g,i)=>({...g,id:g.id||`manual:${i}`,manual:true,source:g.source||'Manual'})));
-  const unique=[...new Map(all.map(g=>[g.id,g])).values()].sort((a,b)=>`${a.date}T${a.time||'23:59'}`.localeCompare(`${b.date}T${b.time||'23:59'}`));
+  const naturalKey=g=>`${g.sourceId||g.source}|${g.date}|${normalize(g.home)}|${normalize(g.away)}`;
+  const merged=new Map();
+  for(const g of all.sort((a,b)=>(a.fallback?1:0)-(b.fallback?1:0))) {
+    const k=naturalKey(g);
+    if(!merged.has(k) || merged.get(k).fallback) merged.set(k,g);
+  }
+  const unique=[...merged.values()].sort((a,b)=>`${a.date}T${a.time||'23:59'}`.localeCompare(`${b.date}T${b.time||'23:59'}`));
   return {generatedAt:new Date().toISOString(),timezone:'Europe/Madrid',games:unique,status};
 }
