@@ -1,0 +1,36 @@
+name: Update hockey games
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_games.py'
+      - '.github/workflows/update-games.yml'
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-hockey-games
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch federation schedules
+        run: python3 scripts/update_games.py
+      - name: Commit changed schedule
+        run: |
+          if git diff --quiet -- data/official-games.json; then
+            echo "No schedule changes"
+            exit 0
+          fi
+          git config user.name "HdK Match Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/official-games.json
+          git commit -m "Update official hockey schedules"
+          git push
