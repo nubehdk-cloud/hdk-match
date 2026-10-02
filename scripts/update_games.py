@@ -59,7 +59,10 @@ def fetch_reader(url):
         return r.read().decode("utf-8","replace")
 
 def to_text(raw):
-    x=re.sub(r"<script[\s\S]*?</script>"," ",raw,flags=re.I)
+    # Jina Reader returns Markdown; remove image markup and keep link labels.
+    x=re.sub(r"!\[[^\]]*\]\([^)]*\)"," ",raw)
+    x=re.sub(r"\[([^\]]+)\]\([^)]*\)",r"\1",x)
+    x=re.sub(r"<script[\s\S]*?</script>"," ",x,flags=re.I)
     x=re.sub(r"<style[\s\S]*?</style>"," ",x,flags=re.I)
     x=re.sub(r"</?(?:br|p|div|li|section|article|h[1-6]|tr|td|th)[^>]*>","\n",x,flags=re.I)
     x=re.sub(r"<[^>]+>"," ",x)
