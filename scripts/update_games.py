@@ -110,9 +110,12 @@ def parse_text(src, raw):
         after=text[m.end():m.end()+180]
         venue=None
         na=norm(after)
+        hits=[]
         for v in src.get("venues",[]):
-            if norm(v) in na:
-                venue=v; break
+            pos=na.find(norm(v))
+            if pos>=0: hits.append((pos,v))
+        if hits:
+            venue=min(hits,key=lambda x:x[0])[1]
         g={
           "id":f'{src["id"]}:{season_date(m.group(3))}:{norm(home)}:{norm(away)}',
           "sourceId":src["id"],"source":src["source"],"sourceUrl":src["officialUrl"],
