@@ -17,7 +17,7 @@ async function postForm(url, source, body, timeoutMs=15000) {
         'content-type':'application/x-www-form-urlencoded;charset=UTF-8',
         'origin':source.origin,
         'referer':`${source.website}/league/${source.leagueId}`,
-        'user-agent':'Mozilla/5.0 (compatible; HdKMatch/0.4; family-schedule)'
+        'user-agent':'Mozilla/5.0 (compatible; HdKMatch/0.5; family-schedule)'
       },
       body:new URLSearchParams(body)
     });
@@ -34,7 +34,7 @@ function rowAround(html,index){
   const start=html.lastIndexOf('<tr',index);
   const end=html.indexOf('</tr>',index);
   if(start>=0 && end>start) return html.slice(start,end+5);
-  return html.slice(Math.max(0,index-900),Math.min(html.length,index+900));
+  return html.slice(Math.max(0,index-1400),Math.min(html.length,index+1400));
 }
 function refsFromCalendar(html) {
   const refs=[], seen=new Set();
@@ -48,7 +48,8 @@ function refsFromCalendar(html) {
       const key=`${m[1]}:${m[2]}:${m[3]}`;
       if (!seen.has(key)) {
         seen.add(key);
-        refs.push({idp:m[1],idc:m[2],idm:Number(m[3]),calendarText:cleanText(rowAround(html,m.index))});
+        const rowHtml=rowAround(html,m.index);
+        refs.push({idp:m[1],idc:m[2],idm:Number(m[3]),rowHtml,calendarText:cleanText(rowHtml)});
       }
     }
   }
@@ -100,6 +101,71 @@ function belongs(g,aliases){
     return h.includes(n)||a.includes(n)||n.includes(h)||n.includes(a);
   });
 }
+function isNoise(s){
+  const n=normalize(s);
+  if(!n || n.length<2) return true;
+  if(/^\d+$/.test(n)) return true;
+  if(/^\d{1,2}\s*[:\/-]\s*\d{1,2}/.test(n)) return true;
+  if(/^(SIN COMENZAR|FINAL|FINALIZADO|APLAZADO|SUSPENDIDO|EN JUEGO|JORNADA|JOR |G J |RESULTADO|ACTA|VER|DETALLE|CRONICA|PABELLON|PISTA|LUGAR|INSTALACION)/.test(n)) return true;
+  if(/\bJORNADA\b/.test(n) || /\bSIN COMENZAR\b/.test(n) || /\bFINAL\b/.test(n)) return true;
+  return !/[A-ZÁÉÍÓÚÜÑ]/i.test(s);
+}
+function cellsFromRow(rowHtml){
+  const cells=[]; let m;
+  const re=/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/ig;
+  while((m=re.exec(rowHtml))){
+    const text=cleanText(m[1]).replace(/^\|\s*|\s*\|$/g,'').trim();
+    if(text) cells.push(text);
+  }
+  return cells;
+}
+function taggedTeamCandidates(rowHtml){
+  const out=[]; let m;
+  const re=/<(?:div|span|a)[^>]*class=["'][^"']*(?:equipo|team|nombre)[^"']*["'][^>]*>([\s\S]*?)<\/(?:div|span|a)>/ig;
+  while((m=re.exec(rowHtml))){
+    const x=cleanText(m[1]).trim();
+    if(x && !isNoise(x) && !out.includes(x)) out.push(x);
+  }
+  return out;
+}
+function attrCandidates(rowHtml){
+  const out=[]; let m;
+  const re=/\b(?:alt|title)=["']([^"']{2,80})["']/ig;
+  while((m=re.exec(rowHtml))){
+    const x=decodeHtml(m[1]).trim();
+    if(x && !isNoise(x) && !out.includes(x)) out.push(x);
+  }
+  return out;
+}
+function calendarTeams(rowHtml, aliases){
+  const cells=cellsFromRow(rowHtml);
+  const aliasNorms=aliases.map(normalize);
+  const hasAlias=s=>aliasNorms.some(a=>normalize(s).includes(a)||a.includes(normalize(s)));
+  const tagged=taggedTeamCandidates(rowHtml);
+  const attrs=attrCandidates(rowHtml);
+  const pool=[...tagged,...cells,...attrs].filter((x,i,a)=>!isNoise(x)&&a.indexOf(x)===i);
+  let mine=pool.find(hasAlias);
+  if(!mine){
+    const text=cleanText(rowHtml);
+    const a=aliases.find(x=>normalize(text).includes(normalize(x)));
+    if(a) mine=a;
+  }
+  if(!mine) return null;
+
+  const mineCellIndex=cells.findIndex(hasAlias);
+  const cellCandidates=cells.map((x,i)=>({x,i})).filter(o=>!isNoise(o.x)&&!hasAlias(o.x));
+  let opp=null;
+  if(mineCellIndex>=0 && cellCandidates.length){
+    cellCandidates.sort((a,b)=>Math.abs(a.i-mineCellIndex)-Math.abs(b.i-mineCellIndex));
+    opp=cellCandidates[0];
+    if(opp){
+      if(opp.i < mineCellIndex) return {home:opp.x,away:mine};
+      if(opp.i > mineCellIndex) return {home:mine,away:opp.x};
+    }
+  }
+  const other=pool.find(x=>!hasAlias(x));
+  return other?{home:mine,away:other}:null;
+}
 async function probe(source) {
   const errors=[];
   for (const c of source.candidates) {
@@ -130,30 +196,42 @@ async function fetchSource(source) {
   const p=await probe(source);
   const refs=refsFromCalendar(p.html);
   if (!refs.length) throw new Error('Calendario sin referencias de partido');
+
   const parsed=await mapLimit(refs,6,async ref=>{
+    const date=extractDate(ref.calendarText);
+    const time=extractTime(ref.calendarText);
+    const calTeams=calendarTeams(ref.rowHtml,source.aliases);
+
+    let detailText='', detailTeams=[], venue=null, round=null;
     try {
       const detail=await postForm(gameUrl(p.connection,ref.idp),source,{idm:String(ref.idm),idc:ref.idc,idp:ref.idp,tab:'tab_ficha_resumen',site_lang:'es'});
-      const teams=teamNames(detail);
-      if(teams.length<2) return null;
-      const detailText=cleanText(detail);
-      const combined=`${ref.calendarText} | ${detailText}`;
-      const date=extractDate(ref.calendarText)||extractDate(detailText);
-      if(!date) return null;
-      const g={
-        id:`${source.id}:${ref.idp}`,sourceId:source.id,
-        source:source.sport==='ice'?'RFEDH':source.id.startsWith('fmp_')?'FMP':'RFEP',
-        sourceUrl:`${source.website}/league/${source.leagueId}`,
-        competition:source.competition,sport:source.sport,players:source.players,
-        date,time:extractTime(ref.calendarText)||extractTime(detailText),
-        home:teams[0],away:teams[1],venue:extractVenue(combined),round:extractRound(combined),
-        idp:ref.idp,leagueId:source.leagueId,manual:false
-      };
-      return belongs(g,source.aliases)?g:null;
-    } catch { return null; }
+      detailText=cleanText(detail);
+      detailTeams=teamNames(detail);
+      venue=extractVenue(`${ref.calendarText} | ${detailText}`);
+      round=extractRound(`${ref.calendarText} | ${detailText}`);
+    } catch {}
+
+    const teams=detailTeams.length>=2?{home:detailTeams[0],away:detailTeams[1]}:calTeams;
+    const finalDate=date||extractDate(detailText);
+    if(!teams || !finalDate) return null;
+
+    const g={
+      id:`${source.id}:${ref.idp}`,sourceId:source.id,
+      source:source.sport==='ice'?'RFEDH':source.id.startsWith('fmp_')?'FMP':'RFEP',
+      sourceUrl:`${source.website}/league/${source.leagueId}`,
+      competition:source.competition,sport:source.sport,players:source.players,
+      date:finalDate,time:time||extractTime(detailText),
+      home:teams.home,away:teams.away,venue,round,
+      idp:ref.idp,leagueId:source.leagueId,manual:false
+    };
+    return belongs(g,source.aliases)?g:null;
   });
+
   const games=parsed.filter(Boolean);
   if (!games.length) throw new Error(`No se localizaron partidos de ${source.label}; referencias encontradas: ${refs.length}`);
-  return {games,endpoint:p.calendarUrl};
+  const now=new Date();
+  const upcoming=games.filter(g=>new Date(`${g.date}T${g.time||'23:59'}:00`)>=now).length;
+  return {games,endpoint:p.calendarUrl,refs:refs.length,upcoming};
 }
 export async function loadGames() {
   const status=[]; const all=[];
@@ -161,7 +239,7 @@ export async function loadGames() {
     try {
       const r=await fetchSource(source);
       all.push(...r.games);
-      status.push({id:source.id,label:source.label,ok:true,games:r.games.length,endpoint:r.endpoint});
+      status.push({id:source.id,label:source.label,ok:true,games:r.games.length,upcoming:r.upcoming,refs:r.refs,endpoint:r.endpoint});
     } catch(e) {
       status.push({id:source.id,label:source.label,ok:false,error:String(e?.message||e)});
     }
