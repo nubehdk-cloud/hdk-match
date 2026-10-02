@@ -30,7 +30,7 @@ SOURCES=[
   {
     "id":"rfep_infantil_oro","label":"Infantil Oro · Las Rozas","source":"RFEP","sport":"line",
     "competition":"Liga Oro Infantil","players":["andres"],
-    "url":"https://hockeyapp.es/hockey-linea/26-27/liga-oro-infantil/joker-floors-las-rozas/2_rfep_3769",
+    "url":"https://hockeyapp.es/hockey-linea/26-27/liga-oro-infantil/rfep_3609",
     "officialUrl":"https://www.hockeylinea.fep.es/league/3609",
     "aliases":["JOKER FLOORS LAS ROZAS","LAS ROZAS"],
     "teams":["SAB TUCANS ASME","METROPOLITANO HC","BURDINOLA IK","JOKER FLOORS LAS ROZAS","PUMAS DEL NORTE","ESPANYA HOQUEI CLUB","CHL TROYANOS","CHL TROYANOS VILLARROBLEDO","CPL VALLADOLID","DRAGONS EL PUIG","CE GADEX LA QUINTA RUEDA","ROLLING LEMONS VALLADOLID","BARCELONA TSUNAMIS"],
