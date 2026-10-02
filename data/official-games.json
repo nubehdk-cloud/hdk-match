@@ -51,7 +51,7 @@
       "time": "14:15",
       "home": "MAMUTS A",
       "away": "LAS ROZAS",
-      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
+      "venue": "I.D. MUN. BASICA LOS ROSALES",
       "round": "Jornada 3",
       "official": true
     },
@@ -162,7 +162,7 @@
       "time": null,
       "home": "LAS ROZAS",
       "away": "PUMAS",
-      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
+      "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "Jornada 4",
       "official": true
     },
@@ -217,7 +217,7 @@
       "time": null,
       "home": "PINGÜINOS A",
       "away": "LAS ROZAS",
-      "venue": "CENTRO DE PATINAJE LAS ROZAS",
+      "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS",
       "round": "Jornada 6",
       "official": true
     },
@@ -401,7 +401,7 @@
       "time": null,
       "home": "PUMAS",
       "away": "LAS ROZAS",
-      "venue": "CENTRO DE PATINAJE LAS ROZAS",
+      "venue": "A DESIGNAR",
       "round": "Jornada 9",
       "official": true
     },
@@ -457,7 +457,7 @@
       "time": null,
       "home": "LAS ROZAS",
       "away": "CPLM A",
-      "venue": "CENTRO DEPORTIVO LAURA OTER",
+      "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "Jornada 10",
       "official": true
     },
@@ -532,7 +532,7 @@
       "time": null,
       "home": "LAS ROZAS",
       "away": "PINGÜINOS A",
-      "venue": "CENTRO DEPORTIVO LAURA OTER",
+      "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "Jornada 11",
       "official": true
     },
@@ -606,7 +606,7 @@
       "time": null,
       "home": "MAMUTS A",
       "away": "LAS ROZAS",
-      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
+      "venue": "I.D. MUN. BASICA LOS ROSALES",
       "round": "Jornada 13",
       "official": true
     },
@@ -624,7 +624,7 @@
       "time": null,
       "home": "LAS ROZAS",
       "away": "PUMAS",
-      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
+      "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "Jornada 14",
       "official": true
     },
@@ -667,5 +667,5 @@
       "games": 5
     }
   ],
-  "updatedAt": "2026-10-02T09:53:59.658120+00:00"
+  "updatedAt": "2026-10-02T09:54:56.817753+00:00"
 }
