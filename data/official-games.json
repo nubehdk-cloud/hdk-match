@@ -75,6 +75,42 @@
       "official": true
     },
     {
+      "id": "rfep_infantil_oro:2026-10-24:BURDINOLA IK:JOKER FLOORS LAS ROZAS",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "home": "BURDINOLA IK",
+      "away": "JOKER FLOORS LAS ROZAS",
+      "venue": null,
+      "round": "Jornada 2",
+      "official": true
+    },
+    {
+      "id": "rfep_infantil_oro:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "PUMAS DEL NORTE",
+      "venue": null,
+      "round": "Jornada 1",
+      "official": true
+    },
+    {
       "id": "rfedh_u15:2026-11-07:QUIMERAS VALDEMORO:LA NEVERA",
       "sourceId": "rfedh_u15",
       "source": "RFEDH",
@@ -220,6 +256,60 @@
       "away": "TRES CANTOS A",
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "Jornada 7",
+      "official": true
+    },
+    {
+      "id": "rfep_infantil_oro:2026-12-19:JOKER FLOORS LAS ROZAS:METROPOLITANO HC",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-12-19",
+      "time": null,
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "METROPOLITANO HC",
+      "venue": null,
+      "round": null,
+      "official": true
+    },
+    {
+      "id": "rfep_infantil_oro:2026-12-19:ESPANYA HOQUEI CLUB:JOKER FLOORS LAS ROZAS",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-12-19",
+      "time": null,
+      "home": "ESPANYA HOQUEI CLUB",
+      "away": "JOKER FLOORS LAS ROZAS",
+      "venue": null,
+      "round": "Jornada 3",
+      "official": true
+    },
+    {
+      "id": "rfep_infantil_oro:2026-12-20:JOKER FLOORS LAS ROZAS:SAB TUCANS ASME",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-12-20",
+      "time": null,
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "SAB TUCANS ASME",
+      "venue": null,
+      "round": "Jornada 5",
       "official": true
     },
     {
@@ -573,9 +663,9 @@
     {
       "id": "rfep_infantil_oro",
       "label": "Infantil Oro · Las Rozas",
-      "ok": false,
-      "error": "direct: 0 partidos; muestra=. Calendario 30  | reader: 0 partidos; muestra=. ⚽ Partidos jugados 0 🥅 Goles totales 🔥 Más goleador 🧤 Menos goleado ## Próximos Partidos 30 encuentros JORNADA 1 [![Image 2: CE GADEX LA QUINTA RUEDA](http://hockeyapp.es/img/clubs/468_3.png)CE GADEX LA QUINTA RUEDA ![Image 3: ROLLING LEMONS VALLADOLID](http://hockeyapp.es/img/clubs/211_5.png)ROLLING LEMONS VALLADOLID 24/10](http://hockeyapp.es/h"
+      "ok": true,
+      "games": 5
     }
   ],
-  "updatedAt": "2026-10-02T09:53:18.293046+00:00"
+  "updatedAt": "2026-10-02T09:53:59.658120+00:00"
 }
