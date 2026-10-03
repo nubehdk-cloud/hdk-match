@@ -48,12 +48,13 @@
         "andres"
       ],
       "date": "2026-10-17",
-      "time": "14:15",
+      "time": null,
       "home": "MAMUTS A",
       "away": "LAS ROZAS",
       "venue": "I.D. MUN. BASICA LOS ROSALES",
       "round": "Jornada 3",
-      "official": true
+      "official": false,
+      "authority": "pending-federation-verification"
     },
     {
       "id": "rfedh_u15:2026-10-18:BAR A HOCKEY GEL:LA NEVERA",
@@ -67,12 +68,14 @@
         "gaston"
       ],
       "date": "2026-10-18",
-      "time": "12:45",
+      "time": "14:45",
       "home": "BARÇA HOCKEY GEL",
       "away": "LA NEVERA",
       "venue": null,
       "round": null,
-      "official": true
+      "official": true,
+      "hintApplied": true,
+      "authority": "manual-verified"
     },
     {
       "id": "rfep_infantil_oro:2026-10-24:BURDINOLA IK:JOKER FLOORS LAS ROZAS",
@@ -667,5 +670,5 @@
       "games": 5
     }
   ],
-  "updatedAt": "2026-10-03T05:49:20.587881+00:00"
+  "updatedAt": "2026-10-03T06:40:54.170Z"
 }
