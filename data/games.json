@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:30:07.766Z",
+  "generatedAt": "2026-10-03T13:27:05.568Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -849,7 +849,7 @@
       "label": "U15 Hielo · Majadahonda",
       "ok": true,
       "games": 16,
-      "upcoming": 16,
+      "upcoming": 15,
       "endpoint": "https://www.server2.sidgad.es/fedhielo/fedhielo_cal_idc_3657_31.php",
       "mode": "official-calendar"
     },
