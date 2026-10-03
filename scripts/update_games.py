@@ -39,7 +39,8 @@ SOURCES=[
 ]
 
 HINTS=[
- {"sourceId":"rfedh_u15","date":"2026-10-03","home":"CH JACA","away":"LA NEVERA","time":"13:00"}
+ {"sourceId":"rfedh_u15","date":"2026-10-03","home":"CH JACA","away":"LA NEVERA","time":"13:00"},
+ {"sourceId":"rfedh_u15","date":"2026-10-18","home":"BARÇA HOCKEY GEL","away":"LA NEVERA","time":"14:45"}
 ]
 
 def norm(s):
@@ -92,8 +93,12 @@ def target(home,away,aliases):
 def apply_hint(g):
     for h in HINTS:
         if h["sourceId"]==g["sourceId"] and h["date"]==g["date"] and norm(h["home"])==norm(g["home"]) and norm(h["away"])==norm(g["away"]):
-            if not g.get("time"): g["time"]=h.get("time")
-            if not g.get("venue") and h.get("venue"): g["venue"]=h["venue"]
+            if not g.get("time") and h.get("time"):
+                g["time"]=h["time"]
+                g["hintApplied"]=True
+            if not g.get("venue") and h.get("venue"):
+                g["venue"]=h["venue"]
+                g["hintApplied"]=True
     return g
 
 def parse_text(src, raw):
@@ -128,28 +133,51 @@ def parse_text(src, raw):
         games.append(apply_hint(g))
     return list({g["id"]:g for g in games}.values()), text
 
-def parse_source(src):
+def parse_url(src, url, label):
     errors=[]
     for mode,fetcher in (("direct",fetch_direct),("reader",fetch_reader)):
         try:
-            raw=fetcher(src["url"])
+            raw=fetcher(url)
             games,text=parse_text(src,raw)
             if games:
-                print(src["id"],"via",mode)
+                print(src["id"],"via",label,mode)
                 return games
-            errors.append(f"{mode}: 0 partidos; muestra={re.sub(r'\s+',' ',text)[:350]}")
+            errors.append(f"{label}/{mode}: 0 partidos; muestra={re.sub(r'\\s+',' ',text)[:350]}")
         except Exception as e:
-            errors.append(f"{mode}: {e}")
+            errors.append(f"{label}/{mode}: {e}")
     raise RuntimeError(" | ".join(errors))
+
+def parse_source(src):
+    # Federation pages are authoritative. The mirror may keep dates/opponents
+    # visible when a federation blocks automated reading, but its times are not trusted.
+    official_error=None
+    try:
+        games=parse_url(src,src["officialUrl"],"official")
+        for g in games:
+            g["authority"]="federation"
+            g["official"]=True
+        return games,True,None
+    except Exception as e:
+        official_error=str(e)
+
+    games=parse_url(src,src["url"],"mirror")
+    for g in games:
+        if not g.get("hintApplied"):
+            g["time"]=None
+        g["authority"]="mirror"
+        g["official"]=False
+    return games,False,official_error
 
 def main():
     all_games=[]; status=[]
     for src in SOURCES:
         try:
-            games=parse_source(src)
+            games,verified,warning=parse_source(src)
             all_games.extend(games)
-            status.append({"id":src["id"],"label":src["label"],"ok":True,"games":len(games)})
-            print(src["id"],"OK",len(games))
+            row={"id":src["id"],"label":src["label"],"ok":True,"games":len(games),"verified":verified}
+            if warning: row["warning"]=warning
+            status.append(row)
+            print(src["id"],"OK",len(games),"verified" if verified else "mirror-no-times")
         except Exception as e:
             status.append({"id":src["id"],"label":src["label"],"ok":False,"error":str(e)})
             print(src["id"],"ERROR",e,file=sys.stderr)
