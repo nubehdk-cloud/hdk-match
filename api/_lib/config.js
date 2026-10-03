@@ -12,6 +12,9 @@ export const SOURCES = [
     teams: ['CDH BIPOLO','CHH TXURI URDIN IHT','CH JACA','LA NEVERA MAJADAHONDA','LA NEVERA','MILENIO PANTHERS','BARÇA HOCKEY GEL','CG PUIGCERDA','KOSNER HUARTE','QUIMERAS VALDEMORO'],
     venues: [],
     candidates: [
+      {folder:'fedhielo',prefix:'fedhielo',idm:31},
+      {folder:'rfedh',prefix:'rfedh',idm:31},
+      {folder:'fedh',prefix:'fedh',idm:31},
       {folder:'fedhielo',prefix:'fedhielo',idm:2},
       {folder:'fedhielo',prefix:'fedhielo',idm:1},
       {folder:'rfedh',prefix:'rfedh',idm:2},
