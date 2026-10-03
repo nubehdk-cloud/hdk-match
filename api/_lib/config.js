@@ -81,6 +81,15 @@ export const CALENDAR_EXTRAS = [
     time:null, place:'home', venue:'Majadahonda'
   },
   {
+    id:'cal-3hj9d0lma2ar5h2s5hupkcnd20',
+    calendarEventId:'3hj9d0lma2ar5h2s5hupkcnd20',
+    sourceId:'calendar', source:'Calendar', special:true,
+    title:'Tecnificación Selección Madrileña',
+    competition:'Tecnificación Selección Madrileña',
+    sport:'line', players:['andres'],
+    date:'2026-10-25', time:null, place:'away', venue:'Galapagar'
+  },
+  {
     id:'cal-o6oqh8m150pa5a0n01m0dv4p8c',
     calendarEventId:'o6oqh8m150pa5a0n01m0dv4p8c',
     sourceId:'calendar', source:'Calendar', special:true,
