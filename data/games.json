@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T06:56:50.227Z",
+  "generatedAt": "2026-10-03T06:58:01.058Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -144,6 +144,12 @@
       "error": "rfep/rfep/2: formato no reconocido (48111 bytes) | rfep/rfep/1: HTTP 404"
     },
     {
+      "id": "rfedh_u15",
+      "label": "U15 Hielo · Majadahonda",
+      "ok": false,
+      "error": "fedhielo/fedhielo/2: HTTP 404 | fedhielo/fedhielo/1: HTTP 404 | rfedh/rfedh/2: HTTP 404 | rfedh/rfedh/1: HTTP 404 | fedh/fedh/2: HTTP 404 | fedh/fedh/1: HTTP 404"
+    },
+    {
       "id": "fmp_infantil",
       "label": "Infantil Madrileña · Las Rozas",
       "ok": true,
@@ -151,12 +157,6 @@
       "upcoming": 0,
       "refs": 3,
       "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php"
-    },
-    {
-      "id": "rfedh_u15",
-      "label": "U15 Hielo · Majadahonda",
-      "ok": false,
-      "error": "fedhielo/fedhielo/2: HTTP 404 | fedhielo/fedhielo/1: HTTP 404 | rfedh/rfedh/2: HTTP 404 | rfedh/rfedh/1: HTTP 404 | fedh/fedh/2: HTTP 404 | fedh/fedh/1: HTTP 404"
     }
   ]
 }
