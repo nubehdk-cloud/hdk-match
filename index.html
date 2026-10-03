@@ -13,7 +13,7 @@
 <div class="sectionlabel">Deporte</div><div class="filters" id="sports"><button class="chip active" data-sport="all">Todos</button><button class="chip" data-sport="ice">🧊 Hielo</button><button class="chip" data-sport="line">🛼 Línea</button></div>
 <div class="sectionlabel">Desplazamiento</div><div class="filters" id="place"><button class="chip active" data-place="all">Todos</button><button class="chip" data-place="home">🏠 Casa</button><button class="chip" data-place="away">🚗 Fuera</button></div>
 <section id="app"><div class="loading">Cargando próximos partidos…</div></section>
-<div class="foot">Datos competitivos RFEDH · FMP · RFEP. Las horas solo se muestran si vienen de la federación o han sido verificadas manualmente; un respaldo externo nunca puede imponer una hora. Calendar solo añade torneos y partidos especiales.</div>
+<div class="foot">Partidos: únicamente RFEDH · FMP · RFEP. Eventos especiales: Google Calendar.</div>
 </main>
 <script>
 (()=>{
@@ -41,7 +41,7 @@ function render(){
   const next=first?`<section class="next"><div class="eyebrow">Siguiente partido</div><div class="nextline"><div class="nextmatch">${icon(first)} ${esc(first.special?(first.title||first.competition):`${first.home} — ${first.away}`)}</div><div class="nextwhen">${esc(whenText(first))}</div></div></section>`:'';
   const cards=list.length?`<div class="list">${list.map(card).join('')}</div>`:'<div class="empty">No hay próximos partidos con estos filtros.</div>';
   const updated=state.data.generatedAt?new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(state.data.generatedAt)):'';
-  const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}</span><span class="${s.ok&&s.verified?'ok':'bad'}">${!s.ok?'⚠ sin conexión':s.verified?`✓ ${s.games} · federación`:`⚠ ${s.games} · respaldo sin horas`}</span></div>`).join('');
+  const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}</span><span class="${s.ok?'ok':'bad'}">${s.ok?`✓ ${s.games} · federación oficial`:'⚠ sin conexión'}</span></div>`).join('');
   app.innerHTML=`${next}${cards}<details><summary>Fuentes · actualización ${esc(updated)}</summary>${status}<div class="actions"><button class="linkbtn" id="reload">Recargar</button><button class="linkbtn" id="refresh">Actualizar competiciones</button></div></details>`;
   $('#reload')?.addEventListener('click',load);$('#refresh')?.addEventListener('click',refresh);
 }
