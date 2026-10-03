@@ -26,3 +26,6 @@ if(JSON.stringify(comparable(old))!==JSON.stringify(comparable(data))){
 for(const s of data.status||[]){
   console.log(s.id, s.ok?'OK':'ERROR', s.games??'', s.error??'');
 }
+for(const g of data.games||[]){
+  if(!g.calendar) console.log('GAME',g.sourceId,g.date,g.time||'--:--',g.home,'vs',g.away);
+}
