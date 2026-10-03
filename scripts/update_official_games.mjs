@@ -18,14 +18,14 @@ async function probeFmp(){
   });
   const raw=await res.text();
   const plain=raw
-    .replace(/<script[\\s\\S]*?<\\/script>/gi,' ')
-    .replace(/<style[\\s\\S]*?<\\/style>/gi,' ')
-    .replace(/<br\\s*\\/?\\s*>/gi,' | ')
-    .replace(/<\\/t[dh]>/gi,' | ')
-    .replace(/<\\/tr>/gi,' || ')
+    .replace(/<script[\s\S]*?<\/script>/gi,' ')
+    .replace(/<style[\s\S]*?<\/style>/gi,' ')
+    .replace(/<br\s*\/?\s*>/gi,' | ')
+    .replace(/<\/t[dh]>/gi,' | ')
+    .replace(/<\/tr>/gi,' || ')
     .replace(/<[^>]+>/g,' ')
     .replace(/&nbsp;/gi,' ')
-    .replace(/\\s+/g,' ');
+    .replace(/\s+/g,' ');
   for(const needle of ['MAMUTS A','LAS ROZAS']){
     let i=0,count=0;
     while((i=plain.toUpperCase().indexOf(needle,i))>=0 && count<12){
