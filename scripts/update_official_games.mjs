@@ -1,4 +1,5 @@
-// Official federation-only updater\nimport fs from 'node:fs';
+// Official federation-only updater
+import fs from 'node:fs';
 import path from 'node:path';
 import { loadGames } from '../api/_lib/sidgad.js';
 
