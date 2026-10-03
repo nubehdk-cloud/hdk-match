@@ -16,7 +16,7 @@
       "home": "CH JACA",
       "away": "LA NEVERA",
       "venue": null,
-      "round": "Jornada 17",
+      "round": null,
       "official": true
     },
     {
@@ -67,11 +67,11 @@
         "gaston"
       ],
       "date": "2026-10-18",
-      "time": "14:45",
+      "time": "12:45",
       "home": "BARÇA HOCKEY GEL",
       "away": "LA NEVERA",
       "venue": null,
-      "round": "Jornada 4",
+      "round": null,
       "official": true
     },
     {
@@ -145,7 +145,7 @@
       "home": "LA NEVERA",
       "away": "QUIMERAS VALDEMORO",
       "venue": null,
-      "round": "Jornada 11",
+      "round": null,
       "official": true
     },
     {
@@ -182,7 +182,7 @@
       "home": "LA NEVERA",
       "away": "KOSNER HUARTE",
       "venue": null,
-      "round": "Jornada 18",
+      "round": null,
       "official": true
     },
     {
@@ -440,7 +440,7 @@
       "home": "MILENIO PANTHERS",
       "away": "LA NEVERA",
       "venue": null,
-      "round": "Jornada 10",
+      "round": null,
       "official": true
     },
     {
@@ -477,7 +477,7 @@
       "home": "CG PUIGCERDA",
       "away": "LA NEVERA",
       "venue": null,
-      "round": "Jornada 12",
+      "round": null,
       "official": true
     },
     {
@@ -552,7 +552,7 @@
       "home": "CDH BIPOLO",
       "away": "LA NEVERA",
       "venue": null,
-      "round": "Jornada 7",
+      "round": null,
       "official": true
     },
     {
@@ -667,5 +667,5 @@
       "games": 5
     }
   ],
-  "updatedAt": "2026-10-02T09:54:56.817753+00:00"
+  "updatedAt": "2026-10-03T05:49:20.587881+00:00"
 }
