@@ -1,0 +1,42 @@
+name: Update official hockey games
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'api/_lib/config.js'
+      - 'api/_lib/sidgad.js'
+      - 'scripts/update_official_games.mjs'
+      - '.github/workflows/update-official-games.yml'
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-official-hockey-games
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Fetch official federation schedules
+        run: node scripts/update_official_games.mjs
+      - name: Commit changed schedule
+        run: |
+          if git diff --quiet -- data/games.json; then
+            echo "No schedule changes"
+            exit 0
+          fi
+          git config user.name "HdK Match Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/games.json
+          git commit -m "Update official federation schedules"
+          git push
