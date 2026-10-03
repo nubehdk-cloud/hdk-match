@@ -31,7 +31,7 @@ jobs:
         run: node scripts/update_official_games.mjs
       - name: Commit changed schedule
         run: |
-          if git diff --quiet -- data/games.json; then
+          if [ -z "$(git status --porcelain -- data/games.json)" ]; then
             echo "No schedule changes"
             exit 0
           fi
