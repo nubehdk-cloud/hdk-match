@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T11:10:25.975Z",
+  "generatedAt": "2026-10-04T18:02:21.772Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -840,7 +840,7 @@
       "label": "Infantil Madrileña · Las Rozas",
       "ok": true,
       "games": 15,
-      "upcoming": 14,
+      "upcoming": 13,
       "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
       "mode": "official-calendar"
     },
