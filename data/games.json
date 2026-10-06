@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:09:58.409Z",
+  "generatedAt": "2026-10-06T03:28:59.971Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -836,6 +836,15 @@
   ],
   "status": [
     {
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
+      "ok": true,
+      "games": 5,
+      "upcoming": 5,
+      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
+      "mode": "official-calendar"
+    },
+    {
       "id": "fmp_infantil",
       "label": "Infantil Madrileña · Las Rozas",
       "ok": true,
@@ -851,15 +860,6 @@
       "games": 16,
       "upcoming": 15,
       "endpoint": "https://www.server2.sidgad.es/fedhielo/fedhielo_cal_idc_3657_31.php",
-      "mode": "official-calendar"
-    },
-    {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
-      "ok": true,
-      "games": 5,
-      "upcoming": 5,
-      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
       "mode": "official-calendar"
     }
   ]
