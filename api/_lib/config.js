@@ -59,6 +59,37 @@ export const SOURCES = [
   }
 ];
 
+
+// Gastón juega hockey línea con Pumas de Galapagar en tres ligas oficiales.
+// Mantenemos las fuentes de Las Rozas de Andrés sin modificaciones.
+SOURCES.push(
+  {
+    ...SOURCES.find(s=>s.id==='fmp_infantil'),
+    id:'fmp_alevin_pumas',
+    label:'Alevín Madrileña · Pumas Galapagar',
+    competition:'Liga Alevín · Madrileña',
+    players:['gaston'],
+    leagueId:'4797',
+    aliases:['PUMAS','PUMAS GALAPAGAR','PUMAS DEL NORTE'],
+    teams:['PUMAS','PUMAS GALAPAGAR','PUMAS DEL NORTE','LAS ROZAS','MAMUTS','PINGÜINOS','TRES CANTOS','CPLM','ALCORCON','TROYANOS','ROLLER','RAPTORS','CANIBALES'],
+  },
+  {
+    ...SOURCES.find(s=>s.id==='fmp_infantil'),
+    id:'fmp_infantil_pumas',
+    label:'Infantil Madrileña · Pumas Galapagar',
+    competition:'Liga Infantil 1 · Madrileña',
+    players:['gaston'],
+    aliases:['PUMAS','PUMAS GALAPAGAR','PUMAS DEL NORTE'],
+  },
+  {
+    ...SOURCES.find(s=>s.id==='rfep_infantil_oro'),
+    id:'rfep_infantil_oro_pumas',
+    label:'Infantil Oro · Pumas Galapagar',
+    players:['gaston'],
+    aliases:['PUMAS DEL NORTE','PUMAS GALAPAGAR'],
+  }
+);
+
 // Solo eventos especiales tomados del Google Calendar principal.
 // Los partidos de liga NO se importan del Calendar: siempre vienen de la federación.
 export const CALENDAR_EXTRAS = [
