@@ -9,7 +9,7 @@ on:
       - 'scripts/update_official_games.mjs'
       - '.github/workflows/update-official-games.yml'
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
