@@ -60,19 +60,9 @@ export const SOURCES = [
 ];
 
 
-// Gastón juega hockey línea con Pumas de Galapagar en tres ligas oficiales.
+// Gastón juega hockey línea con Pumas de Galapagar únicamente en categoría Infantil.
 // Mantenemos las fuentes de Las Rozas de Andrés sin modificaciones.
 SOURCES.push(
-  {
-    ...SOURCES.find(s=>s.id==='fmp_infantil'),
-    id:'fmp_alevin_pumas',
-    label:'Alevín Madrileña · Pumas Galapagar',
-    competition:'Liga Alevín · Madrileña',
-    players:['gaston'],
-    leagueId:'4797',
-    aliases:['PUMAS','PUMAS GALAPAGAR','PUMAS DEL NORTE'],
-    teams:['PUMAS','PUMAS GALAPAGAR','PUMAS DEL NORTE','LAS ROZAS','MAMUTS','PINGÜINOS','TRES CANTOS','CPLM','ALCORCON','TROYANOS','ROLLER','RAPTORS','CANIBALES'],
-  },
   {
     ...SOURCES.find(s=>s.id==='fmp_infantil'),
     id:'fmp_infantil_pumas',
