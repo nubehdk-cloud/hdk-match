@@ -41,25 +41,6 @@
       "leagueId": "4798"
     },
     {
-      "id": "fmp_alevin_pumas:2026-09-26:LAS ROZAS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-09-26",
-      "time": "16:15",
-      "home": "LAS ROZAS",
-      "away": "PUMAS",
-      "venue": "CENTRO DE PATINAJE LAS ROZAS",
-      "round": "JORNADA 1",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "rfedh_u15:2026-10-03:CH JACA:LA NEVERA",
       "sourceId": "rfedh_u15",
       "source": "RFEDH",
@@ -118,25 +99,6 @@
       "leagueId": "4798"
     },
     {
-      "id": "fmp_alevin_pumas:2026-10-04:PUMAS:MAMUTS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-10-04",
-      "time": "18:30",
-      "home": "PUMAS",
-      "away": "MAMUTS",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 2",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "cal-04icpd1l3q3d6bqcb74c3dl88k",
       "calendarEventId": "04icpd1l3q3d6bqcb74c3dl88k",
       "sourceId": "calendar",
@@ -173,25 +135,6 @@
       "place": "home",
       "venue": "Majadahonda",
       "calendar": true
-    },
-    {
-      "id": "fmp_alevin_pumas:2026-10-16:TRES CANTOS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-10-16",
-      "time": "18:15",
-      "home": "TRES CANTOS",
-      "away": "PUMAS",
-      "venue": "CENTRO DEPORTIVO LAURA OTER",
-      "round": "JORNADA 3",
-      "official": true,
-      "leagueId": "4797"
     },
     {
       "id": "fmp_infantil_pumas:2026-10-16:PUMAS:TRES CANTOS A",
@@ -425,25 +368,6 @@
       "leagueId": "3657"
     },
     {
-      "id": "fmp_alevin_pumas:2026-11-14:PINGUINOS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-11-14",
-      "time": null,
-      "home": "PINGÜINOS",
-      "away": "PUMAS",
-      "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS",
-      "round": "JORNADA 4",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "fmp_infantil_pumas:2026-11-14:LAS ROZAS:PUMAS",
       "sourceId": "fmp_infantil_pumas",
       "source": "FMP",
@@ -502,25 +426,6 @@
       "leagueId": "3657"
     },
     {
-      "id": "fmp_alevin_pumas:2026-11-21:PUMAS:CPLM",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-11-21",
-      "time": null,
-      "home": "PUMAS",
-      "away": "CPLM",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 5",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "fmp_infantil_pumas:2026-11-21:PUMAS:MAMUTS A",
       "sourceId": "fmp_infantil_pumas",
       "source": "FMP",
@@ -557,25 +462,6 @@
       "round": "JORNADA 6",
       "official": true,
       "leagueId": "4798"
-    },
-    {
-      "id": "fmp_alevin_pumas:2026-11-28:PUMAS:LAS ROZAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-11-28",
-      "time": null,
-      "home": "PUMAS",
-      "away": "LAS ROZAS",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 6",
-      "official": true,
-      "leagueId": "4797"
     },
     {
       "id": "fmp_infantil_pumas:2026-11-28:CPLM A:PUMAS",
@@ -653,25 +539,6 @@
       "round": "JORNADA 7",
       "official": true,
       "leagueId": "4798"
-    },
-    {
-      "id": "fmp_alevin_pumas:2026-12-12:MAMUTS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-12-12",
-      "time": null,
-      "home": "MAMUTS",
-      "away": "PUMAS",
-      "venue": "I.D. MUN. BASICA LOS ROSALES",
-      "round": "JORNADA 7",
-      "official": true,
-      "leagueId": "4797"
     },
     {
       "id": "fmp_infantil_pumas:2026-12-12:PUMAS:PINGUINOS A",
@@ -902,25 +769,6 @@
       "leagueId": "3657"
     },
     {
-      "id": "fmp_alevin_pumas:2027-01-16:PUMAS:TRES CANTOS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-01-16",
-      "time": null,
-      "home": "PUMAS",
-      "away": "TRES CANTOS",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 8",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "fmp_infantil_pumas:2027-01-16:TRES CANTOS A:PUMAS",
       "sourceId": "fmp_infantil_pumas",
       "source": "FMP",
@@ -979,25 +827,6 @@
       "leagueId": "3657"
     },
     {
-      "id": "fmp_alevin_pumas:2027-01-23:PUMAS:PINGUINOS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-01-23",
-      "time": null,
-      "home": "PUMAS",
-      "away": "PINGÜINOS",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 9",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "fmp_infantil_pumas:2027-01-23:PUMAS:LAS ROZAS",
       "sourceId": "fmp_infantil_pumas",
       "source": "FMP",
@@ -1037,25 +866,6 @@
       "leagueId": "3657"
     },
     {
-      "id": "fmp_alevin_pumas:2027-01-30:CPLM:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-01-30",
-      "time": null,
-      "home": "CPLM",
-      "away": "PUMAS",
-      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
-      "round": "JORNADA 10",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "rfedh_u15:2027-01-31:MILENIO PANTHERS:LA NEVERA",
       "sourceId": "rfedh_u15",
       "source": "RFEDH",
@@ -1093,25 +903,6 @@
       "round": "JORNADA 10",
       "official": true,
       "leagueId": "4798"
-    },
-    {
-      "id": "fmp_alevin_pumas:2027-02-06:LAS ROZAS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-02-06",
-      "time": null,
-      "home": "LAS ROZAS",
-      "away": "PUMAS",
-      "venue": "CENTRO DE PATINAJE LAS ROZAS",
-      "round": "JORNADA 11",
-      "official": true,
-      "leagueId": "4797"
     },
     {
       "id": "fmp_infantil_pumas:2027-02-06:MAMUTS A:PUMAS",
@@ -1212,25 +1003,6 @@
       "leagueId": "3657"
     },
     {
-      "id": "fmp_alevin_pumas:2027-02-20:PUMAS:MAMUTS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-02-20",
-      "time": null,
-      "home": "PUMAS",
-      "away": "MAMUTS",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 12",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "fmp_infantil_pumas:2027-02-20:PUMAS:CPLM A",
       "sourceId": "fmp_infantil_pumas",
       "source": "FMP",
@@ -1288,25 +1060,6 @@
       "round": "JORNADA 3",
       "official": true,
       "leagueId": "3657"
-    },
-    {
-      "id": "fmp_alevin_pumas:2027-03-06:TRES CANTOS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-03-06",
-      "time": null,
-      "home": "TRES CANTOS",
-      "away": "PUMAS",
-      "venue": "CENTRO DEPORTIVO LAURA OTER",
-      "round": "JORNADA 13",
-      "official": true,
-      "leagueId": "4797"
     },
     {
       "id": "fmp_infantil:2027-03-13:TRES CANTOS A:LAS ROZAS",
@@ -1442,25 +1195,6 @@
       "leagueId": "4798"
     },
     {
-      "id": "fmp_alevin_pumas:2027-04-17:PINGUINOS:PUMAS",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-04-17",
-      "time": null,
-      "home": "PINGÜINOS",
-      "away": "PUMAS",
-      "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS",
-      "round": "JORNADA 14",
-      "official": true,
-      "leagueId": "4797"
-    },
-    {
       "id": "fmp_infantil_pumas:2027-04-17:PUMAS:MAMUTS A",
       "sourceId": "fmp_infantil_pumas",
       "source": "FMP",
@@ -1478,25 +1212,6 @@
       "round": "JORNADA 15",
       "official": true,
       "leagueId": "4798"
-    },
-    {
-      "id": "fmp_alevin_pumas:2027-04-24:PUMAS:CPLM",
-      "sourceId": "fmp_alevin_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4797",
-      "competition": "Liga Alevín · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2027-04-24",
-      "time": null,
-      "home": "PUMAS",
-      "away": "CPLM",
-      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
-      "round": "JORNADA 15",
-      "official": true,
-      "leagueId": "4797"
     }
   ],
   "status": [
@@ -1525,15 +1240,6 @@
       "games": 5,
       "upcoming": 5,
       "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
-      "mode": "official-calendar"
-    },
-    {
-      "id": "fmp_alevin_pumas",
-      "label": "Alevín Madrileña · Pumas Galapagar",
-      "ok": true,
-      "games": 15,
-      "upcoming": 13,
-      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4797_2.php",
       "mode": "official-calendar"
     },
     {
