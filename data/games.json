@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T06:11:06.594Z",
+  "generatedAt": "2026-10-08T07:50:59.982Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -271,8 +271,8 @@
       "leagueId": "3609"
     },
     {
-      "id": "cal-3hj9d0lma2ar5h2s5hupkcnd20",
-      "calendarEventId": "3hj9d0lma2ar5h2s5hupkcnd20",
+      "id": "cal-b3h7qc6k820idouphdshtgddgg",
+      "calendarEventId": "b3h7qc6k820idouphdshtgddgg",
       "sourceId": "calendar",
       "source": "Calendar",
       "special": true,
@@ -283,7 +283,7 @@
         "andres"
       ],
       "date": "2026-10-25",
-      "time": null,
+      "time": "17:00",
       "place": "away",
       "venue": "Galapagar",
       "calendar": true
