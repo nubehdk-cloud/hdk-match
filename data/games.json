@@ -271,24 +271,6 @@
       "leagueId": "3609"
     },
     {
-      "id": "cal-b3h7qc6k820idouphdshtgddgg",
-      "calendarEventId": "b3h7qc6k820idouphdshtgddgg",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "Tecnificación Selección Madrileña",
-      "competition": "Tecnificación Selección Madrileña",
-      "sport": "line",
-      "players": [
-        "andres"
-      ],
-      "date": "2026-10-25",
-      "time": "17:00",
-      "place": "away",
-      "venue": "Galapagar",
-      "calendar": true
-    },
-    {
       "id": "cal-o6oqh8m150pa5a0n01m0dv4p8c",
       "calendarEventId": "o6oqh8m150pa5a0n01m0dv4p8c",
       "sourceId": "calendar",
