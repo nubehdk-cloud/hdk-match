@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T20:48:37.136Z",
+  "generatedAt": "2026-10-09T20:53:33.464Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -97,44 +97,6 @@
       "round": "JORNADA 2",
       "official": true,
       "leagueId": "4798"
-    },
-    {
-      "id": "cal-04icpd1l3q3d6bqcb74c3dl88k",
-      "calendarEventId": "04icpd1l3q3d6bqcb74c3dl88k",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "U13 Jaca · Gastón",
-      "competition": "Festival U13",
-      "sport": "ice",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-10-10",
-      "endDate": "2026-10-11",
-      "time": null,
-      "place": "away",
-      "venue": "Jaca",
-      "calendar": true
-    },
-    {
-      "id": "cal-6t541j0voidl23nmim1sf965o4",
-      "calendarEventId": "6t541j0voidl23nmim1sf965o4",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "AROK Boston U17 · Preparación · Majadahonda",
-      "competition": "Preparación Boston",
-      "sport": "ice",
-      "players": [
-        "andres"
-      ],
-      "date": "2026-10-11",
-      "endDate": "2026-10-12",
-      "time": null,
-      "place": "home",
-      "venue": "Majadahonda",
-      "calendar": true
     },
     {
       "id": "fmp_infantil_pumas:2026-10-16:PUMAS:TRES CANTOS A",
@@ -269,26 +231,6 @@
       "round": "JORNADA 2",
       "official": true,
       "leagueId": "3609"
-    },
-    {
-      "id": "cal-o6oqh8m150pa5a0n01m0dv4p8c",
-      "calendarEventId": "o6oqh8m150pa5a0n01m0dv4p8c",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "International Cup U15 · Donosti · Andrés + Gastón",
-      "competition": "International Cup U15 by Karlos Gordovil",
-      "sport": "ice",
-      "players": [
-        "andres",
-        "gaston"
-      ],
-      "date": "2026-10-31",
-      "endDate": "2026-11-01",
-      "time": null,
-      "place": "away",
-      "venue": "Donostia-San Sebastián",
-      "calendar": true
     },
     {
       "id": "rfedh_u15:2026-11-07:QUIMERAS VALDEMORO:LA NEVERA",
@@ -465,25 +407,6 @@
       "leagueId": "4798"
     },
     {
-      "id": "cal-qgcnp4chpcjtrcag9deihfn20s",
-      "calendarEventId": "qgcnp4chpcjtrcag9deihfn20s",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "AROK · Boston · Viaje y torneo",
-      "competition": "AROK Boston U17",
-      "sport": "ice",
-      "players": [
-        "andres"
-      ],
-      "date": "2026-11-29",
-      "endDate": "2026-12-07",
-      "time": null,
-      "place": "away",
-      "venue": "Boston, Massachusetts",
-      "calendar": true
-    },
-    {
       "id": "rfedh_u15:2026-12-05:LA NEVERA:BARCA HOCKEY GEL",
       "sourceId": "rfedh_u15",
       "source": "RFEDH",
@@ -654,42 +577,6 @@
       "round": "JORNADA 5",
       "official": true,
       "leagueId": "3609"
-    },
-    {
-      "id": "cal-6v56eoggl1t4an0tjjc9vccdas",
-      "calendarEventId": "6v56eoggl1t4an0tjjc9vccdas",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "Rungsted IK · Prueba Andrés · Porteros + U16",
-      "competition": "Prueba Rungsted IK",
-      "sport": "ice",
-      "players": [
-        "andres"
-      ],
-      "date": "2027-01-04",
-      "time": null,
-      "place": "away",
-      "venue": "Rungsted Ishockey Klub, Rungsted Kyst",
-      "calendar": true
-    },
-    {
-      "id": "cal-odpp2qg05n6i5d5mlo2qeaqvcg",
-      "calendarEventId": "odpp2qg05n6i5d5mlo2qeaqvcg",
-      "sourceId": "calendar",
-      "source": "Calendar",
-      "special": true,
-      "title": "Rungsted IK · Prueba Andrés · U16",
-      "competition": "Prueba Rungsted IK",
-      "sport": "ice",
-      "players": [
-        "andres"
-      ],
-      "date": "2027-01-07",
-      "time": null,
-      "place": "away",
-      "venue": "Rungsted Ishockey Klub, Rungsted Kyst",
-      "calendar": true
     },
     {
       "id": "rfedh_u15:2027-01-09:LA NEVERA:CDH BIPOLO",
@@ -1216,21 +1103,21 @@
       "mode": "official-calendar"
     },
     {
-      "id": "fmp_infantil_pumas",
-      "label": "Infantil Madrileña · Pumas Galapagar",
-      "ok": true,
-      "games": 15,
-      "upcoming": 13,
-      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
-      "mode": "official-calendar"
-    },
-    {
       "id": "rfep_infantil_oro",
       "label": "Infantil Oro · Las Rozas",
       "ok": true,
       "games": 5,
       "upcoming": 5,
       "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
+      "mode": "official-calendar"
+    },
+    {
+      "id": "fmp_infantil_pumas",
+      "label": "Infantil Madrileña · Pumas Galapagar",
+      "ok": true,
+      "games": 15,
+      "upcoming": 13,
+      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
       "mode": "official-calendar"
     },
     {
