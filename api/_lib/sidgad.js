@@ -1,4 +1,4 @@
-import { SOURCES, CALENDAR_EXTRAS } from './config.js';
+import { SOURCES } from './config.js';
 
 const pad2=v=>String(v).padStart(2,'0');
 const normalize=(s='')=>String(s).toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^A-Z0-9]+/g,' ').trim();
@@ -239,7 +239,6 @@ export async function loadGames(){
       status.push({id:source.id,label:source.label,ok:false,error:String(e?.message||e)});
     }
   }));
-  all.push(...CALENDAR_EXTRAS.map(g=>({...g,calendar:true})));
   const unique=[...new Map(all.map(g=>[g.id,g])).values()]
     .sort((a,b)=>`${a.date}T${a.time||'23:59'}`.localeCompare(`${b.date}T${b.time||'23:59'}`));
   return {generatedAt:new Date().toISOString(),timezone:'Europe/Madrid',games:unique,status};
