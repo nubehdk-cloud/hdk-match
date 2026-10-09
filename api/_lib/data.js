@@ -1,22 +1,27 @@
-import fs from 'node:fs';
+// The calendar snapshot is generated from the private Google Calendar by the scheduled sync.
+// A static JSON import ensures Vercel includes this file in the serverless bundle.
+import calendarSnapshot from '../../data/calendar-events.json' with { type: 'json' };
+import officialSnapshot from '../../data/games.json' with { type: 'json' };
 
-function readJson(relativePath,fallback){
-  try{
-    const url=new URL(relativePath,import.meta.url);
-    return JSON.parse(fs.readFileSync(url,'utf8'));
-  }catch{
-    return fallback;
-  }
-}
-
-export function loadCachedGames(){
-  const official=readJson('../../data/games.json',{generatedAt:null,timezone:'Europe/Madrid',games:[],status:[]});
-  const calendar=readJson('../../data/calendar-events.json',{generatedAt:null,events:[]});
-  const games=[...(official.games||[]),...(calendar.events||[])]
-    .sort((a,b)=>`${a.date}T${a.time||'23:59'}`.localeCompare(`${b.date}T${b.time||'23:59'}`));
+export function mergeCalendarGames(official) {
+  const federationGames = (official.games || []).filter(g => g.sourceId !== 'calendar' && !g.calendar);
+  // The latest complete snapshot is authoritative: deleted/cancelled events are absent.
+  const extras = (calendarSnapshot.events || []).filter(
+    g => g.sourceId === 'calendar' && g.special === true &&
+      !!g.calendarEventId && !!g.date && !g.cancelled
+  );
+  const byId = new Map([...federationGames, ...extras].map(g => [g.id, g]));
+  const games = [...byId.values()].sort((a, b) =>
+    `${a.date}T${a.time || '23:59'}`.localeCompare(`${b.date}T${b.time || '23:59'}`)
+  );
   return {
     ...official,
     games,
-    calendarGeneratedAt:calendar.generatedAt||null
+    calendarGeneratedAt: calendarSnapshot.generatedAt || null,
+    calendarEvents: extras.length
   };
+}
+
+export function loadCachedGames() {
+  return mergeCalendarGames(officialSnapshot);
 }
