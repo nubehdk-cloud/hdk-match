@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T07:50:59.982Z",
+  "generatedAt": "2026-10-09T06:11:41.286Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -339,7 +339,26 @@
         "andres"
       ],
       "date": "2026-11-14",
-      "time": null,
+      "time": "19:40",
+      "home": "LAS ROZAS",
+      "away": "PUMAS",
+      "venue": "CENTRO DE PATINAJE LAS ROZAS",
+      "round": "JORNADA 4",
+      "official": true,
+      "leagueId": "4798"
+    },
+    {
+      "id": "fmp_infantil_pumas:2026-11-14:LAS ROZAS:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "date": "2026-11-14",
+      "time": "19:40",
       "home": "LAS ROZAS",
       "away": "PUMAS",
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
@@ -366,25 +385,6 @@
       "round": "JORNADA 11",
       "official": true,
       "leagueId": "3657"
-    },
-    {
-      "id": "fmp_infantil_pumas:2026-11-14:LAS ROZAS:PUMAS",
-      "sourceId": "fmp_infantil_pumas",
-      "source": "FMP",
-      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798",
-      "competition": "Liga Infantil 1 · Madrileña",
-      "sport": "line",
-      "players": [
-        "gaston"
-      ],
-      "date": "2026-11-14",
-      "time": null,
-      "home": "LAS ROZAS",
-      "away": "PUMAS",
-      "venue": "CENTRO DE PATINAJE LAS ROZAS",
-      "round": "JORNADA 4",
-      "official": true,
-      "leagueId": "4798"
     },
     {
       "id": "fmp_infantil:2026-11-21:CPLM A:LAS ROZAS",
@@ -1234,15 +1234,6 @@
       "mode": "official-calendar"
     },
     {
-      "id": "fmp_infantil_pumas",
-      "label": "Infantil Madrileña · Pumas Galapagar",
-      "ok": true,
-      "games": 15,
-      "upcoming": 13,
-      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
-      "mode": "official-calendar"
-    },
-    {
       "id": "rfep_infantil_oro",
       "label": "Infantil Oro · Las Rozas",
       "ok": true,
@@ -1258,6 +1249,15 @@
       "games": 5,
       "upcoming": 5,
       "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
+      "mode": "official-calendar"
+    },
+    {
+      "id": "fmp_infantil_pumas",
+      "label": "Infantil Madrileña · Pumas Galapagar",
+      "ok": true,
+      "games": 15,
+      "upcoming": 13,
+      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
       "mode": "official-calendar"
     }
   ]
