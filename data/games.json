@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T06:09:35.819Z",
+  "generatedAt": "2026-10-12T06:13:26.483Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -465,44 +465,6 @@
       "leagueId": "4798"
     },
     {
-      "id": "rfep_infantil_oro:2026-12-19:ESPANYA HOQUEI CLUB:JOKER FLOORS LAS ROZAS",
-      "sourceId": "rfep_infantil_oro",
-      "source": "RFEP",
-      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
-      "competition": "Liga Oro Infantil",
-      "sport": "line",
-      "players": [
-        "andres"
-      ],
-      "date": "2026-12-19",
-      "time": null,
-      "home": "ESPANYA HOQUEI CLUB",
-      "away": "JOKER FLOORS LAS ROZAS",
-      "venue": null,
-      "round": "JORNADA 3",
-      "official": true,
-      "leagueId": "3609"
-    },
-    {
-      "id": "rfep_infantil_oro:2026-12-19:JOKER FLOORS LAS ROZAS:METROPOLITANO HC",
-      "sourceId": "rfep_infantil_oro",
-      "source": "RFEP",
-      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
-      "competition": "Liga Oro Infantil",
-      "sport": "line",
-      "players": [
-        "andres"
-      ],
-      "date": "2026-12-19",
-      "time": null,
-      "home": "JOKER FLOORS LAS ROZAS",
-      "away": "METROPOLITANO HC",
-      "venue": null,
-      "round": "JORNADA 4",
-      "official": true,
-      "leagueId": "3609"
-    },
-    {
       "id": "rfep_infantil_oro_pumas:2026-12-19:SAB TUCANS ASME:PUMAS DEL NORTE",
       "sourceId": "rfep_infantil_oro_pumas",
       "source": "RFEP",
@@ -513,9 +475,28 @@
         "gaston"
       ],
       "date": "2026-12-19",
-      "time": null,
+      "time": "10:00",
       "home": "SAB TUCANS ASME",
       "away": "PUMAS DEL NORTE",
+      "venue": null,
+      "round": "JORNADA 3",
+      "official": true,
+      "leagueId": "3609"
+    },
+    {
+      "id": "rfep_infantil_oro:2026-12-19:ESPANYA HOQUEI CLUB:JOKER FLOORS LAS ROZAS",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-12-19",
+      "time": "12:30",
+      "home": "ESPANYA HOQUEI CLUB",
+      "away": "JOKER FLOORS LAS ROZAS",
       "venue": null,
       "round": "JORNADA 3",
       "official": true,
@@ -532,9 +513,28 @@
         "gaston"
       ],
       "date": "2026-12-19",
-      "time": null,
+      "time": "16:00",
       "home": "PUMAS DEL NORTE",
       "away": "BURDINOLA IK",
+      "venue": null,
+      "round": "JORNADA 4",
+      "official": true,
+      "leagueId": "3609"
+    },
+    {
+      "id": "rfep_infantil_oro:2026-12-19:JOKER FLOORS LAS ROZAS:METROPOLITANO HC",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "date": "2026-12-19",
+      "time": "18:30",
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "METROPOLITANO HC",
       "venue": null,
       "round": "JORNADA 4",
       "official": true,
@@ -551,7 +551,7 @@
         "andres"
       ],
       "date": "2026-12-20",
-      "time": null,
+      "time": "11:15",
       "home": "JOKER FLOORS LAS ROZAS",
       "away": "SAB TUCANS ASME",
       "venue": null,
@@ -570,7 +570,7 @@
         "gaston"
       ],
       "date": "2026-12-20",
-      "time": null,
+      "time": "12:30",
       "home": "METROPOLITANO HC",
       "away": "PUMAS DEL NORTE",
       "venue": null,
