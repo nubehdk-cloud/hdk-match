@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T20:52:10.540Z",
+  "generatedAt": "2026-10-20T09:56:56.592Z",
   "timezone": "Europe/Madrid",
   "events": [
     {
@@ -74,6 +74,101 @@
       "place": "away",
       "venue": "Boston, Massachusetts",
       "calendarEventId": "qgcnp4chpcjtrcag9deihfn20s",
+      "sourceId": "calendar",
+      "source": "Calendar",
+      "special": true,
+      "calendar": true
+    },
+    {
+      "id": "cal-0f5qvukjs1idddk481f9jq7qg4",
+      "title": "AROK Jaca · Mañana: hielo · Tarde: torneo 3vs3",
+      "competition": "Tecnificación intensiva · AROK Hockey Academy",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "date": "2026-12-26",
+      "time": null,
+      "place": "away",
+      "venue": "Jaca",
+      "calendarEventId": "0f5qvukjs1idddk481f9jq7qg4",
+      "sourceId": "calendar",
+      "source": "Calendar",
+      "special": true,
+      "calendar": true
+    },
+    {
+      "id": "cal-3f9k76se9tcahi4je62udbcqos",
+      "title": "AROK Jaca · Mañana: hielo · Tarde: torneo 3vs3",
+      "competition": "Tecnificación intensiva · AROK Hockey Academy",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "date": "2026-12-27",
+      "time": null,
+      "place": "away",
+      "venue": "Jaca",
+      "calendarEventId": "3f9k76se9tcahi4je62udbcqos",
+      "sourceId": "calendar",
+      "source": "Calendar",
+      "special": true,
+      "calendar": true
+    },
+    {
+      "id": "cal-vs65j4gndk91cgsh4j348hv8bk",
+      "title": "AROK Jaca · Mañana: hielo · Tarde: torneo 3vs3",
+      "competition": "Tecnificación intensiva · AROK Hockey Academy",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "date": "2026-12-28",
+      "time": null,
+      "place": "away",
+      "venue": "Jaca",
+      "calendarEventId": "vs65j4gndk91cgsh4j348hv8bk",
+      "sourceId": "calendar",
+      "source": "Calendar",
+      "special": true,
+      "calendar": true
+    },
+    {
+      "id": "cal-djn5c1lbkb5npstk9cbsus54fg",
+      "title": "AROK Jaca · Mañana: hielo · Tarde: torneo 3vs3",
+      "competition": "Tecnificación intensiva · AROK Hockey Academy",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "date": "2026-12-29",
+      "time": null,
+      "place": "away",
+      "venue": "Jaca",
+      "calendarEventId": "djn5c1lbkb5npstk9cbsus54fg",
+      "sourceId": "calendar",
+      "source": "Calendar",
+      "special": true,
+      "calendar": true
+    },
+    {
+      "id": "cal-reurimas8ekhcv9c1u1cpjv81o",
+      "title": "AROK Jaca · Mañana: partido final Full Ice",
+      "competition": "Tecnificación intensiva · AROK Hockey Academy",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "date": "2026-12-30",
+      "time": null,
+      "place": "away",
+      "venue": "Jaca",
+      "calendarEventId": "reurimas8ekhcv9c1u1cpjv81o",
       "sourceId": "calendar",
       "source": "Calendar",
       "special": true,
