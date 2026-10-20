@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T06:26:28.318Z",
+  "generatedAt": "2026-10-20T06:22:49.331Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -1083,21 +1083,21 @@
       "mode": "official-calendar"
     },
     {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
-      "ok": true,
-      "games": 5,
-      "upcoming": 5,
-      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
-      "mode": "official-calendar"
-    },
-    {
       "id": "fmp_infantil_pumas",
       "label": "Infantil Madrileña · Pumas Galapagar",
       "ok": true,
       "games": 15,
       "upcoming": 12,
       "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
+      "mode": "official-calendar"
+    },
+    {
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
+      "ok": true,
+      "games": 5,
+      "upcoming": 5,
+      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
       "mode": "official-calendar"
     },
     {
