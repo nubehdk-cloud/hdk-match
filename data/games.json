@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T06:38:35.758Z",
+  "generatedAt": "2026-11-02T06:58:19.383Z",
   "timezone": "Europe/Madrid",
   "games": [
     {
@@ -137,14 +137,14 @@
       "leagueId": "4798"
     },
     {
-      "id": "rfep_infantil_oro:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
-      "sourceId": "rfep_infantil_oro",
+      "id": "rfep_infantil_oro_pumas:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro_pumas",
       "source": "RFEP",
       "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
       "competition": "Liga Oro Infantil",
       "sport": "line",
       "players": [
-        "andres"
+        "gaston"
       ],
       "date": "2026-10-24",
       "time": "12:30",
@@ -156,14 +156,14 @@
       "leagueId": "3609"
     },
     {
-      "id": "rfep_infantil_oro_pumas:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
-      "sourceId": "rfep_infantil_oro_pumas",
+      "id": "rfep_infantil_oro:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro",
       "source": "RFEP",
       "sourceUrl": "https://www.hockeylinea.fep.es/league/3609",
       "competition": "Liga Oro Infantil",
       "sport": "line",
       "players": [
-        "gaston"
+        "andres"
       ],
       "date": "2026-10-24",
       "time": "12:30",
@@ -1074,6 +1074,24 @@
       "mode": "official-calendar"
     },
     {
+      "id": "rfep_infantil_oro_pumas",
+      "label": "Infantil Oro · Pumas Galapagar",
+      "ok": true,
+      "games": 5,
+      "upcoming": 3,
+      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
+      "mode": "official-calendar"
+    },
+    {
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
+      "ok": true,
+      "games": 5,
+      "upcoming": 3,
+      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
+      "mode": "official-calendar"
+    },
+    {
       "id": "rfedh_u15",
       "label": "U15 Hielo · Majadahonda",
       "ok": true,
@@ -1089,24 +1107,6 @@
       "games": 15,
       "upcoming": 12,
       "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
-      "mode": "official-calendar"
-    },
-    {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
-      "ok": true,
-      "games": 5,
-      "upcoming": 3,
-      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
-      "mode": "official-calendar"
-    },
-    {
-      "id": "rfep_infantil_oro_pumas",
-      "label": "Infantil Oro · Pumas Galapagar",
-      "ok": true,
-      "games": 5,
-      "upcoming": 3,
-      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
       "mode": "official-calendar"
     }
   ]
