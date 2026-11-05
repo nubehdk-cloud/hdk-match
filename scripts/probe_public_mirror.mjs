@@ -12,6 +12,9 @@ for(const [id,url] of pages){
     console.log('MIRROR',id,res.status,html.length,res.url);
     for(const t of terms){let at=html.toLowerCase().indexOf(t.toLowerCase());if(at>=0)console.log('MIRROR-MATCH',id,t,at,html.slice(Math.max(0,at-130),at+320).replace(/\s+/g,' ').slice(0,400))}
     console.log('MIRROR-PREVIEW',id,html.slice(0,700).replace(/\s+/g,' '));
+    const anchor=html.indexOf('<a href=', html.indexOf('Próximos Partidos',10000));
+    if(anchor>=0)console.log('MIRROR-CARD',id,html.slice(anchor,anchor+2100).replace(/\s+/g,' '));
+    console.log('MIRROR-MATCH-COUNT',id,(html.match(/class="partido-link/g)||[]).length);
   }catch(e){console.log('MIRROR-ERROR',id,String(e))}
   finally{clearTimeout(tm)}
 }
