@@ -2,6 +2,7 @@
 // A static JSON import ensures Vercel includes this file in the serverless bundle.
 import calendarSnapshot from '../../data/calendar-events.json' with { type: 'json' };
 import officialSnapshot from '../../data/games.json' with { type: 'json' };
+import publicContrastSnapshot from '../../data/public-contrast.json' with { type: 'json' };
 
 export function mergeCalendarGames(official) {
   const federationGames = (official.games || []).filter(g => g.sourceId !== 'calendar' && !g.calendar);
@@ -31,7 +32,12 @@ export function mergeCalendarGames(official) {
     status: statuses,
     games,
     calendarGeneratedAt: calendarSnapshot.generatedAt || null,
-    calendarEvents: extras.length
+    calendarEvents: extras.length,
+    // Secondary source is deliberately separate; it must NEVER be reported as
+    // a federation-verified fixture or merged into the canonical official list.
+    contrastGames: (publicContrastSnapshot.games || []).filter(g => g.provisional === true && g.official === false),
+    contrastStatus: publicContrastSnapshot.status || [],
+    contrastGeneratedAt: publicContrastSnapshot.generatedAt || null
   };
 }
 
