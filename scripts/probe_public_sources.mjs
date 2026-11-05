@@ -41,3 +41,28 @@ for (const [label,url] of inspection){
     console.log('URLS',label,JSON.stringify(u));
   }catch(e){console.log('INSPECT ERROR',label,String(e))}
 }
+
+
+const newPortal='https://www.hockeylinea.fep.es/league/3609';
+try{
+  const html=await (await fetch(newPortal)).text();
+  for(const needle of ['api.sidgad.com','apiBase','api_url','leagueId','"idc"','sidgad-league.js','window.__','__INITIAL','new_portal','match-card','league/3609']){
+    let from=0,count=0;while(count<3){
+      const p=html.toLowerCase().indexOf(needle.toLowerCase(),from);if(p<0)break;
+      console.log('PORTAL CONTEXT',needle,p,JSON.stringify(html.slice(Math.max(0,p-330),p+550).replace(/\s+/g,' ')));
+      from=p+needle.length;count++;
+    }
+  }
+  const scripts=[...html.matchAll(/<script[^>]*src=["']([^"']+)["']/gi)].map(x=>x[1]).filter(x=>x.includes('sidgad'));
+  console.log('PORTAL JS',JSON.stringify(scripts.slice(0,40)));
+  const candidates=scripts.filter(x=>/core|router|league/i.test(x)).slice(0,4);
+  for(const url of candidates){
+    try{
+      const r=await fetch(url),js=await r.text();console.log('JS FILE',url,r.status,js.length);
+      for(const needle of ['api.sidgad.com','/api/','/v1/','league','fetch(','sidgad.cloud']){
+        const p=js.toLowerCase().indexOf(needle.toLowerCase());
+        if(p>=0)console.log('JS CONTEXT',needle,p,JSON.stringify(js.slice(Math.max(0,p-200),p+500).replace(/\s+/g,' ')));
+      }
+    }catch(e){console.log('JS ERROR',url,String(e))}
+  }
+}catch(e){console.log('PORTAL ERROR',String(e))}
