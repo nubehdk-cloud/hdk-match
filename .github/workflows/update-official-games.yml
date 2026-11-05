@@ -7,6 +7,7 @@ on:
       - 'api/_lib/config.js'
       - 'api/_lib/sidgad.js'
       - 'scripts/update_official_games.mjs'
+      - 'scripts/probe_public_sources.mjs'
       - '.github/workflows/update-official-games.yml'
   schedule:
     - cron: '10 21 * * *'
