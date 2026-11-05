@@ -160,8 +160,7 @@ function teamNames(html){
   return names.slice(0,2);
 }
 
-const sharedProbes = new Map();
-async function probe(source){
+async function probe(source, sharedProbes){
   // Las Rozas and Pumas share the same league calendar: one official request.
   const key = `${source.website}:${source.leagueId}`;
   if (!sharedProbes.has(key)) sharedProbes.set(key, probeLeague(source));
@@ -196,8 +195,8 @@ async function mapLimit(items,limit,fn){
   return out;
 }
 
-async function fetchSource(source){
-  const p=await probe(source);
+async function fetchSource(source, sharedProbes){
+  const p=await probe(source, sharedProbes);
 
   const rowGames=parseCalendarRows(source,p.html);
   if(rowGames.length){
@@ -240,10 +239,11 @@ async function fetchSource(source){
 }
 
 export async function loadGames(){
+  const sharedProbes=new Map();
   const status=[],all=[];
   await Promise.all(SOURCES.map(async source=>{
     try{
-      const r=await fetchSource(source);
+      const r=await fetchSource(source, sharedProbes);
       all.push(...r.games);
       status.push({id:source.id,label:source.label,ok:true,games:r.games.length,upcoming:r.upcoming,endpoint:r.endpoint,mode:r.mode});
     }catch(e){
