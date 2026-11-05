@@ -1,12 +1,27 @@
 {
   "functions": {
-    "api/games.js": { "maxDuration": 60 },
-    "api/refresh.js": { "maxDuration": 60 }
+    "api/games.js": {
+      "maxDuration": 60
+    },
+    "api/refresh.js": {
+      "maxDuration": 60
+    },
+    "api/diagnose-official.js": {
+      "maxDuration": 60,
+      "regions": [
+        "cdg1"
+      ]
+    }
   },
   "headers": [
     {
       "source": "/sw.js",
-      "headers": [{"key":"Cache-Control","value":"public, max-age=0, must-revalidate"}]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ]
 }
