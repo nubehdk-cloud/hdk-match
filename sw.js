@@ -1,4 +1,13 @@
-const CACHE='hdk-match-v5';
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['/','/manifest.webmanifest','/icon.svg'])).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).pathname.startsWith('/api/'))return;e.respondWith(fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(e.request)))});
+// HDK Match always requires fresh online data. No offline copies of fixtures
+// or HTML are stored by the service worker.
+self.addEventListener('install',event=>{
+  event.waitUntil(self.skipWaiting());
+});
+self.addEventListener('activate',event=>{
+  event.waitUntil((async()=>{
+    const names=await caches.keys();
+    await Promise.all(names.filter(name=>name.startsWith('hdk-match-')).map(name=>caches.delete(name)));
+    await self.clients.claim();
+  })());
+});
+// Intentionally no fetch handler: do not serve stale cached screens.
