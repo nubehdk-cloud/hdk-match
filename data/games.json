@@ -19,7 +19,9 @@
       "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
       "round": "JORNADA 1",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-09-26:LAS ROZAS:PINGUINOS A",
@@ -38,7 +40,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 1",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2026-10-03:CH JACA:LA NEVERA",
@@ -58,7 +62,9 @@
       "venue": null,
       "round": "JORNADA 17",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2026-10-04:PINGUINOS A:PUMAS",
@@ -77,7 +83,9 @@
       "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS",
       "round": "JORNADA 2",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-10-04:TRES CANTOS A:LAS ROZAS",
@@ -96,7 +104,9 @@
       "venue": "CENTRO DEPORTIVO LAURA OTER",
       "round": "JORNADA 2",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2026-10-16:PUMAS:TRES CANTOS A",
@@ -115,7 +125,9 @@
       "venue": "CENTRO DEPORTIVO LAURA OTER",
       "round": "JORNADA 3",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-10-17:MAMUTS A:LAS ROZAS",
@@ -134,7 +146,9 @@
       "venue": "I.D. MUN. BASICA LOS ROSALES",
       "round": "JORNADA 3",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
@@ -153,7 +167,9 @@
       "venue": null,
       "round": "JORNADA 1",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro_pumas:2026-10-24:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
@@ -172,7 +188,9 @@
       "venue": null,
       "round": "JORNADA 1",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro:2026-10-24:BURDINOLA IK:JOKER FLOORS LAS ROZAS",
@@ -191,7 +209,9 @@
       "venue": null,
       "round": "JORNADA 2",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro_pumas:2026-10-24:PUMAS DEL NORTE:ESPANYA HOQUEI CLUB",
@@ -210,7 +230,9 @@
       "venue": null,
       "round": "JORNADA 2",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-11-14:LAS ROZAS:PUMAS",
@@ -229,7 +251,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 4",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2026-11-14:LAS ROZAS:PUMAS",
@@ -248,7 +272,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 4",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2026-11-14:LA NEVERA:QUIMERAS VALDEMORO",
@@ -268,7 +294,9 @@
       "venue": null,
       "round": "JORNADA 11",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2026-11-21:LA NEVERA:KOSNER HUARTE",
@@ -288,7 +316,9 @@
       "venue": null,
       "round": "JORNADA 18",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2026-11-21:PUMAS:MAMUTS A",
@@ -307,7 +337,9 @@
       "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
       "round": "JORNADA 5",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-11-22:CPLM A:LAS ROZAS",
@@ -326,7 +358,9 @@
       "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
       "round": "JORNADA 5",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-11-28:PINGUINOS A:LAS ROZAS",
@@ -345,7 +379,9 @@
       "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS",
       "round": "JORNADA 6",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2026-11-28:CPLM A:PUMAS",
@@ -364,7 +400,9 @@
       "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
       "round": "JORNADA 6",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2026-12-05:LA NEVERA:BARCA HOCKEY GEL",
@@ -384,7 +422,9 @@
       "venue": null,
       "round": "JORNADA 13",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2026-12-12:QUIMERAS VALDEMORO:LA NEVERA",
@@ -404,7 +444,9 @@
       "venue": null,
       "round": "JORNADA 2",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2026-12-12:LAS ROZAS:TRES CANTOS A",
@@ -423,7 +465,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 7",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2026-12-12:PUMAS:PINGUINOS A",
@@ -442,7 +486,9 @@
       "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR",
       "round": "JORNADA 7",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro_pumas:2026-12-19:SAB TUCANS ASME:PUMAS DEL NORTE",
@@ -461,7 +507,9 @@
       "venue": null,
       "round": "JORNADA 3",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro:2026-12-19:ESPANYA HOQUEI CLUB:JOKER FLOORS LAS ROZAS",
@@ -480,7 +528,9 @@
       "venue": null,
       "round": "JORNADA 3",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro_pumas:2026-12-19:PUMAS DEL NORTE:BURDINOLA IK",
@@ -499,7 +549,9 @@
       "venue": null,
       "round": "JORNADA 4",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro:2026-12-19:JOKER FLOORS LAS ROZAS:METROPOLITANO HC",
@@ -518,7 +570,9 @@
       "venue": null,
       "round": "JORNADA 4",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro:2026-12-20:JOKER FLOORS LAS ROZAS:SAB TUCANS ASME",
@@ -537,7 +591,9 @@
       "venue": null,
       "round": "JORNADA 5",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro_pumas:2026-12-20:METROPOLITANO HC:PUMAS DEL NORTE",
@@ -556,7 +612,9 @@
       "venue": null,
       "round": "JORNADA 5",
       "official": true,
-      "leagueId": "3609"
+      "leagueId": "3609",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-01-09:LA NEVERA:CDH BIPOLO",
@@ -576,7 +634,9 @@
       "venue": null,
       "round": "JORNADA 16",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-01-16:LAS ROZAS:MAMUTS A",
@@ -595,7 +655,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 8",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-01-16:LA NEVERA:MILENIO PANTHERS",
@@ -615,7 +677,9 @@
       "venue": null,
       "round": "JORNADA 1",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-01-16:TRES CANTOS A:PUMAS",
@@ -634,7 +698,9 @@
       "venue": "CENTRO DEPORTIVO LAURA OTER",
       "round": "JORNADA 8",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-01-23:PUMAS:LAS ROZAS",
@@ -653,7 +719,9 @@
       "venue": "A DESIGNAR",
       "round": "JORNADA 9",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-01-23:LA NEVERA:CH JACA",
@@ -673,7 +741,9 @@
       "venue": null,
       "round": "JORNADA 8",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-01-23:PUMAS:LAS ROZAS",
@@ -692,7 +762,9 @@
       "venue": "A DESIGNAR",
       "round": "JORNADA 9",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-01-30:KOSNER HUARTE:LA NEVERA",
@@ -712,7 +784,9 @@
       "venue": null,
       "round": "JORNADA 9",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-01-31:MILENIO PANTHERS:LA NEVERA",
@@ -732,7 +806,9 @@
       "venue": null,
       "round": "JORNADA 10",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-02-06:LAS ROZAS:CPLM A",
@@ -751,7 +827,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 10",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-02-06:MAMUTS A:PUMAS",
@@ -770,7 +848,9 @@
       "venue": "I.D. MUN. BASICA LOS ROSALES",
       "round": "JORNADA 10",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-02-07:CG PUIGCERDA:LA NEVERA",
@@ -790,7 +870,9 @@
       "venue": null,
       "round": "JORNADA 12",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-02-14:LA NEVERA:CHH TXURI URDIN IHT",
@@ -810,7 +892,9 @@
       "venue": null,
       "round": "JORNADA 6",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-02-20:LAS ROZAS:PINGUINOS A",
@@ -829,7 +913,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 11",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-02-20:CHH TXURI URDIN IHT:LA NEVERA",
@@ -849,7 +935,9 @@
       "venue": null,
       "round": "JORNADA 15",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-02-20:PUMAS:CPLM A",
@@ -868,7 +956,9 @@
       "venue": "A DESIGNAR",
       "round": "JORNADA 11",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-02-21:CDH BIPOLO:LA NEVERA",
@@ -888,7 +978,9 @@
       "venue": null,
       "round": "JORNADA 7",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfedh_u15:2027-03-06:LA NEVERA:CG PUIGCERDA",
@@ -908,7 +1000,9 @@
       "venue": null,
       "round": "JORNADA 3",
       "official": true,
-      "leagueId": "3657"
+      "leagueId": "3657",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-03-13:TRES CANTOS A:LAS ROZAS",
@@ -927,7 +1021,9 @@
       "venue": "CENTRO DEPORTIVO LAURA OTER",
       "round": "JORNADA 12",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-03-13:PINGUINOS A:PUMAS",
@@ -946,7 +1042,9 @@
       "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS",
       "round": "JORNADA 12",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-04-03:MAMUTS A:LAS ROZAS",
@@ -965,7 +1063,9 @@
       "venue": "I.D. MUN. BASICA LOS ROSALES",
       "round": "JORNADA 13",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-04-03:PUMAS:TRES CANTOS A",
@@ -984,7 +1084,9 @@
       "venue": "A DESIGNAR",
       "round": "JORNADA 13",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-04-10:LAS ROZAS:PUMAS",
@@ -1003,7 +1105,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 14",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-04-10:LAS ROZAS:PUMAS",
@@ -1022,7 +1126,9 @@
       "venue": "CENTRO DE PATINAJE LAS ROZAS",
       "round": "JORNADA 14",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil:2027-04-17:CPLM A:LAS ROZAS",
@@ -1041,7 +1147,9 @@
       "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA",
       "round": "JORNADA 15",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "fmp_infantil_pumas:2027-04-17:PUMAS:MAMUTS A",
@@ -1060,54 +1168,51 @@
       "venue": "A DESIGNAR",
       "round": "JORNADA 15",
       "official": true,
-      "leagueId": "4798"
+      "leagueId": "4798",
+      "cached": true,
+      "cachedAt": "2026-11-05T13:52:00.159Z"
     }
   ],
   "status": [
     {
-      "id": "fmp_infantil",
-      "label": "Infantil Madrileña · Las Rozas",
-      "ok": true,
-      "games": 15,
-      "upcoming": 12,
-      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
-      "mode": "official-calendar"
-    },
-    {
-      "id": "rfedh_u15",
-      "label": "U15 Hielo · Majadahonda",
-      "ok": true,
-      "games": 15,
-      "upcoming": 14,
-      "endpoint": "https://www.server2.sidgad.es/fedhielo/fedhielo_cal_idc_3657_31.php",
-      "mode": "official-calendar"
-    },
-    {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
-      "ok": true,
-      "games": 5,
-      "upcoming": 3,
-      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
-      "mode": "official-calendar"
-    },
-    {
       "id": "fmp_infantil_pumas",
       "label": "Infantil Madrileña · Pumas Galapagar",
-      "ok": true,
-      "games": 15,
-      "upcoming": 12,
-      "endpoint": "https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php",
-      "mode": "official-calendar"
+      "ok": false,
+      "error": "fmp/fmp/2: HTTP 403 | fmp/fmp/1: HTTP 403",
+      "cachedGames": 15,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     },
     {
       "id": "rfep_infantil_oro_pumas",
       "label": "Infantil Oro · Pumas Galapagar",
-      "ok": true,
-      "games": 5,
-      "upcoming": 3,
-      "endpoint": "https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php",
-      "mode": "official-calendar"
+      "ok": false,
+      "error": "rfep/rfep/2: HTTP 403 | rfep/rfep/1: HTTP 403",
+      "cachedGames": 5,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
+    },
+    {
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
+      "ok": false,
+      "error": "rfep/rfep/2: HTTP 403 | rfep/rfep/1: HTTP 403",
+      "cachedGames": 5,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
+    },
+    {
+      "id": "fmp_infantil",
+      "label": "Infantil Madrileña · Las Rozas",
+      "ok": false,
+      "error": "fmp/fmp/2: HTTP 403 | fmp/fmp/1: HTTP 403",
+      "cachedGames": 15,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
+    },
+    {
+      "id": "rfedh_u15",
+      "label": "U15 Hielo · Majadahonda",
+      "ok": false,
+      "error": "fedhielo/fedhielo/31: HTTP 403 | rfedh/rfedh/31: HTTP 403 | fedh/fedh/31: HTTP 403 | fedhielo/fedhielo/2: HTTP 403 | fedhielo/fedhielo/1: HTTP 403 | rfedh/rfedh/2: HTTP 403 | rfedh/rfedh/1: HTTP 403 | fedh/fedh/2: HTTP 403 | fedh/fedh/1: HTTP 403",
+      "cachedGames": 15,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     }
   ]
 }
