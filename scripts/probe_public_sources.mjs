@@ -66,3 +66,18 @@ try{
     }catch(e){console.log('JS ERROR',url,String(e))}
   }
 }catch(e){console.log('PORTAL ERROR',String(e))}
+
+for(const [label,url] of [
+ ['PUBLIC API','https://api.sidgad.com/'],
+ ['PUBLIC API V1','https://api.sidgad.com/v1/'],
+ ['CLOUD RFEP','https://sidgad.cloud/rfep/'],
+ ['RFEP SAME ORIGIN JS','https://www.hockeylinea.fep.es/new_portal/assets/js/sidgad-core.js'],
+ ['FEDH HTTPS JS','https://server2.sidgad.es/portales_https.js?v=12345678910']
+]){
+  try{const c=new AbortController(),timer=setTimeout(()=>c.abort(),7000);let r;
+    try{r=await fetch(url,{signal:c.signal,headers:{accept:'application/json,text/html,*/*'}})}
+    finally{clearTimeout(timer)}
+    const body=await r.text();
+    console.log('ALTERNATE',label,r.status,r.url,body.length,body.slice(0,200).replace(/\s+/g,' '));
+  }catch(e){console.log('ALTERNATE ERROR',label,String(e).slice(0,150))}
+}
