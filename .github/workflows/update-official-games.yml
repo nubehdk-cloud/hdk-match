@@ -7,7 +7,8 @@ on:
       - 'api/_lib/config.js'
       - 'api/_lib/sidgad.js'
       - 'scripts/update_official_games.mjs'
-      - 'scripts/probe_public_mirror.mjs'
+      - 'api/_lib/public-contrast.js'
+      - 'scripts/update_public_contrast.mjs'
       - '.github/workflows/update-official-games.yml'
   schedule:
     - cron: '10 21 * * *'
@@ -31,19 +32,19 @@ jobs:
           node-version: '20'
       - name: Sync latest main
         run: git pull --rebase origin main
-      - name: Test public schedule representation
-        run: node scripts/probe_public_mirror.mjs
       - name: Fetch official federation schedules
         run: node scripts/update_official_games.mjs
+      - name: Fetch separately labeled public contrast
+        run: node scripts/update_public_contrast.mjs
       - name: Commit changed schedule
         run: |
-          if [ -z "$(git status --porcelain -- data/games.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/games.json data/public-contrast.json)" ]; then
             echo "No schedule changes"
             exit 0
           fi
           git config user.name "HdK Match Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/games.json
+          git add data/games.json data/public-contrast.json
           git commit -m "Update official federation schedules"
           git pull --rebase origin main
           git push
