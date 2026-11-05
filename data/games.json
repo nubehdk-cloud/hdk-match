@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-11-05T20:53:55.667Z",
+  "generatedAt": "2026-11-05T20:55:14.451Z",
   "timezone": "Europe/Madrid",
   "games": [],
   "status": [
-    {
-      "id": "rfedh_u15",
-      "label": "U15 Hielo · Majadahonda",
-      "ok": false,
-      "error": "fedhielo/fedhielo/31: HTTP 403"
-    },
     {
       "id": "fmp_infantil",
       "label": "Infantil Madrileña · Las Rozas",
@@ -20,6 +14,12 @@
       "label": "Infantil Madrileña · Pumas Galapagar",
       "ok": false,
       "error": "fmp/fmp/2: HTTP 403"
+    },
+    {
+      "id": "rfedh_u15",
+      "label": "U15 Hielo · Majadahonda",
+      "ok": false,
+      "error": "fedhielo/fedhielo/31: HTTP 403"
     },
     {
       "id": "rfep_infantil_oro",
