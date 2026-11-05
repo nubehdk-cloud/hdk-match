@@ -1183,16 +1183,16 @@
       "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     },
     {
-      "id": "rfep_infantil_oro_pumas",
-      "label": "Infantil Oro · Pumas Galapagar",
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
       "ok": false,
       "error": "rfep/rfep/2: HTTP 403 | rfep/rfep/1: HTTP 403",
       "cachedGames": 5,
       "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     },
     {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
+      "id": "rfep_infantil_oro_pumas",
+      "label": "Infantil Oro · Pumas Galapagar",
       "ok": false,
       "error": "rfep/rfep/2: HTTP 403 | rfep/rfep/1: HTTP 403",
       "cachedGames": 5,
