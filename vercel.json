@@ -5,12 +5,6 @@
     },
     "api/refresh.js": {
       "maxDuration": 60
-    },
-    "api/diagnose-official.js": {
-      "maxDuration": 60,
-      "regions": [
-        "cdg1"
-      ]
     }
   },
   "headers": [
