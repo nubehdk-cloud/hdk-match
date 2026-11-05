@@ -33,7 +33,8 @@ const icon=g=>g.sport==='ice'?'🧊':'🛼';
 const filtered=()=>[...(state.data?.games||[])].filter(g=>!finished(g)&&(state.person==='all'||g.players?.includes(state.person))&&(state.sport==='all'||g.sport===state.sport)&&(state.place==='all'||(state.place==='home'?isHome(g):!isHome(g)))).sort((a,b)=>(a.date+(a.time||'23:59')).localeCompare(b.date+(b.time||'23:59')));
 function card(g){
   const matchup=g.special&&!g.home&&!g.away?`<div class="teams" style="grid-template-columns:1fr"><div style="text-align:center">${esc(g.title||g.competition)}</div></div>`:`<div class="teams"><div class="h">${esc(g.home)}</div><div class="dash">—</div><div>${esc(g.away)}</div></div>`;
-  const note=g.hintApplied?'<div class="note">Hora completada manualmente porque el feed competitivo aún no la publica.</div>':'';
+  const note=(g.cached?'<div class="note">Calendario oficial guardado: pendiente de nueva verificación con la federación.</div>':'')+
+    (g.hintApplied?'<div class="note">Hora completada manualmente porque el feed competitivo aún no la publica.</div>':'');
   return `<article class="card${pumas(g)?' pumas':rozas(g)?' rozas':g.sport==='ice'?' hielo':''}"><div class="meta"><div><div class="tags">${icon(g)} ${esc(g.competition)} · ${esc(names(g))}${g.round?` · ${esc(g.round)}`:''}</div><div class="when">${esc(whenText(g))}</div></div><div class="where">${isHome(g)?'CASA':'FUERA'}</div></div>${matchup}${g.venue?`<div class="venue">📍 ${esc(g.venue)}</div>`:''}${note}</article>`;
 }
 function render(){
@@ -43,7 +44,7 @@ function render(){
   const next=first?`<section class="next"><div class="eyebrow">Siguiente partido</div><div class="nextline"><div class="nextmatch">${icon(first)} ${esc(first.special&&!first.home&&!first.away?(first.title||first.competition):`${first.home} — ${first.away}`)}</div><div class="nextwhen">${esc(whenText(first))}</div></div></section>`:'';
   const cards=list.length?`<div class="list">${list.map(card).join('')}</div>`:'<div class="empty">No hay próximos partidos con estos filtros.</div>';
   const updated=state.data.generatedAt?new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(state.data.generatedAt)):'';
-  const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}</span><span class="${s.ok?'ok':'bad'}">${s.ok?`✓ ${s.games} · federación oficial`:'⚠ sin conexión'}</span></div>`).join('');
+  const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}</span><span class="${s.ok?'ok':'bad'}">${s.ok?`✓ ${s.games} · federación oficial`:(s.cachedGames?`⚠ conexión pendiente · ${s.cachedGames} guardados`:'⚠ sin conexión')}</span></div>`).join('');
   app.innerHTML=`${next}${cards}<details><summary>Fuentes · actualización ${esc(updated)}</summary>${status}<div class="actions"><button class="linkbtn" id="reload">Recargar</button><button class="linkbtn" id="refresh">Actualizar federaciones</button></div></details>`;
   $('#reload')?.addEventListener('click',load);$('#refresh')?.addEventListener('click',refresh);
 }
