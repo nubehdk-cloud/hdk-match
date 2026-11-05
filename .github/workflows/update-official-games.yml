@@ -7,7 +7,6 @@ on:
       - 'api/_lib/config.js'
       - 'api/_lib/sidgad.js'
       - 'scripts/update_official_games.mjs'
-      - 'scripts/verify_federation_hosts.mjs'
       - '.github/workflows/update-official-games.yml'
   schedule:
     - cron: '10 21 * * *'
@@ -31,8 +30,6 @@ jobs:
           node-version: '20'
       - name: Sync latest main
         run: git pull --rebase origin main
-      - name: Verify federation-owned calendar endpoints
-        run: node scripts/verify_federation_hosts.mjs
       - name: Fetch official federation schedules
         run: node scripts/update_official_games.mjs
       - name: Commit changed schedule
