@@ -1175,34 +1175,18 @@
   ],
   "status": [
     {
-      "id": "fmp_infantil_pumas",
-      "label": "Infantil Madrileña · Pumas Galapagar",
+      "id": "fmp_infantil",
+      "label": "Infantil Madrileña · Las Rozas",
       "ok": false,
-      "error": "fmp/fmp/2: HTTP 403 | fmp/fmp/1: HTTP 403",
+      "error": "fmp/fmp/2: HTTP 403",
       "cachedGames": 15,
       "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     },
     {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
+      "id": "fmp_infantil_pumas",
+      "label": "Infantil Madrileña · Pumas Galapagar",
       "ok": false,
-      "error": "rfep/rfep/2: HTTP 403 | rfep/rfep/1: HTTP 403",
-      "cachedGames": 5,
-      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
-    },
-    {
-      "id": "rfep_infantil_oro_pumas",
-      "label": "Infantil Oro · Pumas Galapagar",
-      "ok": false,
-      "error": "rfep/rfep/2: HTTP 403 | rfep/rfep/1: HTTP 403",
-      "cachedGames": 5,
-      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
-    },
-    {
-      "id": "fmp_infantil",
-      "label": "Infantil Madrileña · Las Rozas",
-      "ok": false,
-      "error": "fmp/fmp/2: HTTP 403 | fmp/fmp/1: HTTP 403",
+      "error": "fmp/fmp/2: HTTP 403",
       "cachedGames": 15,
       "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     },
@@ -1210,8 +1194,24 @@
       "id": "rfedh_u15",
       "label": "U15 Hielo · Majadahonda",
       "ok": false,
-      "error": "fedhielo/fedhielo/31: HTTP 403 | rfedh/rfedh/31: HTTP 403 | fedh/fedh/31: HTTP 403 | fedhielo/fedhielo/2: HTTP 403 | fedhielo/fedhielo/1: HTTP 403 | rfedh/rfedh/2: HTTP 403 | rfedh/rfedh/1: HTTP 403 | fedh/fedh/2: HTTP 403 | fedh/fedh/1: HTTP 403",
+      "error": "fedhielo/fedhielo/31: HTTP 403",
       "cachedGames": 15,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
+    },
+    {
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
+      "ok": false,
+      "error": "rfep/rfep/2: HTTP 403",
+      "cachedGames": 5,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas",
+      "label": "Infantil Oro · Pumas Galapagar",
+      "ok": false,
+      "error": "rfep/rfep/2: HTTP 403",
+      "cachedGames": 5,
       "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     }
   ]
