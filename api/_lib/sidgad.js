@@ -160,7 +160,14 @@ function teamNames(html){
   return names.slice(0,2);
 }
 
+const sharedProbes = new Map();
 async function probe(source){
+  // Las Rozas and Pumas share the same league calendar: one official request.
+  const key = `${source.website}:${source.leagueId}`;
+  if (!sharedProbes.has(key)) sharedProbes.set(key, probeLeague(source));
+  return sharedProbes.get(key);
+}
+async function probeLeague(source){
   const errors=[];
   for(const c of source.candidates||[]){
     const url=calUrl(c,source.leagueId);
@@ -168,7 +175,11 @@ async function probe(source){
       const html=await postForm(url,source,{idc:source.leagueId,site_lang:'es'});
       if(looksLikeCalendar(source,html)) return {connection:c,calendarUrl:url,html};
       errors.push(`${c.folder}/${c.prefix}/${c.idm}: formato no reconocido (${html.length} bytes)`);
-    }catch(e){errors.push(`${c.folder}/${c.prefix}/${c.idm}: ${e?.message||e}`);}
+    }catch(e){
+      errors.push(`${c.folder}/${c.prefix}/${c.idm}: ${e?.message||e}`);
+      // A 403/429 is access denial or throttling. Do not flood alternate paths.
+      if (/HTTP (403|429)\b/.test(String(e?.message||e))) break;
+    }
   }
   throw new Error(errors.join(' | '));
 }
