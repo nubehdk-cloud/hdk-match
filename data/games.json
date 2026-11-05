@@ -1175,14 +1175,6 @@
   ],
   "status": [
     {
-      "id": "rfedh_u15",
-      "label": "U15 Hielo · Majadahonda",
-      "ok": false,
-      "error": "fedhielo/fedhielo/31: HTTP 403",
-      "cachedGames": 15,
-      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
-    },
-    {
       "id": "fmp_infantil",
       "label": "Infantil Madrileña · Las Rozas",
       "ok": false,
@@ -1195,6 +1187,14 @@
       "label": "Infantil Madrileña · Pumas Galapagar",
       "ok": false,
       "error": "fmp/fmp/2: HTTP 403",
+      "cachedGames": 15,
+      "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
+    },
+    {
+      "id": "rfedh_u15",
+      "label": "U15 Hielo · Majadahonda",
+      "ok": false,
+      "error": "fedhielo/fedhielo/31: HTTP 403",
       "cachedGames": 15,
       "lastVerifiedAt": "2026-11-05T13:52:00.159Z"
     },
