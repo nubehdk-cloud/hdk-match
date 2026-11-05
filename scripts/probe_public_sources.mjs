@@ -81,3 +81,26 @@ for(const [label,url] of [
     console.log('ALTERNATE',label,r.status,r.url,body.length,body.slice(0,200).replace(/\s+/g,' '));
   }catch(e){console.log('ALTERNATE ERROR',label,String(e).slice(0,150))}
 }
+
+
+try {
+  const h=await (await fetch('https://www.hockeylinea.fep.es/league/3609')).text();
+  const m=h.match(/const SIDGAD_API_CONFIG\s*=\s*(\{[^;]*\})\s*;/);
+  if(!m)throw Error('No public API configuration');
+  const cfg=JSON.parse(m[1]);
+  const t=cfg.token; const base=cfg.url;
+  const tests=[
+    ['bearer',base+'/v1/',{Authorization:'Bearer '+t}],
+    ['x-api-token',base+'/v1/',{'X-Api-Token':t}],
+    ['x-api-key',base+'/v1/',{'X-Api-Key':t}],
+    ['token-header',base+'/v1/',{'token':t}],
+    ['query-token',base+'/v1/?token='+encodeURIComponent(t),{}]
+  ];
+  for(const [label,url,headers] of tests){
+    const ctrl=new AbortController(),tm=setTimeout(()=>ctrl.abort(),6500);
+    try{const r=await fetch(url,{headers,signal:ctrl.signal});const body=await r.text();
+      console.log('AUTH TEST',label,r.status,body.length,body.slice(0,150).replace(/\s+/g,' '));
+    }catch(e){console.log('AUTH ERROR',label,String(e).slice(0,100))}
+    finally{clearTimeout(tm)}
+  }
+}catch(e){console.log('AUTH TEST ERROR',String(e))}
