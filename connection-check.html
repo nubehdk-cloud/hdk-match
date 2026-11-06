@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>HDK · Diagnóstico de conexión</title><h1>Comprobación de calendarios oficiales</h1><pre id="result">Consultando…</pre><script>
+(async()=>{const results=await Promise.all([
+['FMP','https://www.server2.sidgad.es/fmp/fmp_cal_idc_4798_2.php','4798'],
+['RFEDH','https://www.server2.sidgad.es/fedhielo/fedhielo_cal_idc_3657_31.php','3657'],
+['RFEP','https://www.server2.sidgad.es/rfep/rfep_cal_idc_3609_2.php','3609']
+].map(async([name,url,id])=>{try{const r=await fetch(url,{method:'POST',body:new URLSearchParams({idc:id,site_lang:'es'}),signal:AbortSignal.timeout(20000)});const t=await r.text();return {name,status:r.status,length:t.length,preview:t.slice(0,140)}}catch(e){return {name,error:e.message}}}));document.getElementById('result').textContent=JSON.stringify(results,null,2)})();
+</script>
