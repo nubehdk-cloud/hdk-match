@@ -1,19 +1,13 @@
 {
-  "generatedAt": "2026-11-06T00:57:17.672Z",
+  "generatedAt": "2026-11-06T08:37:37.442Z",
   "timezone": "Europe/Madrid",
   "games": [],
   "status": [
     {
-      "id": "rfep_infantil_oro",
-      "label": "Infantil Oro · Las Rozas",
+      "id": "rfedh_u15",
+      "label": "U15 Hielo · Majadahonda",
       "ok": false,
-      "error": "rfep/rfep/2: HTTP 403"
-    },
-    {
-      "id": "rfep_infantil_oro_pumas",
-      "label": "Infantil Oro · Pumas Galapagar",
-      "ok": false,
-      "error": "rfep/rfep/2: HTTP 403"
+      "error": "fedhielo/fedhielo/31: HTTP 403"
     },
     {
       "id": "fmp_infantil",
@@ -28,10 +22,16 @@
       "error": "fmp/fmp/2: HTTP 403"
     },
     {
-      "id": "rfedh_u15",
-      "label": "U15 Hielo · Majadahonda",
+      "id": "rfep_infantil_oro",
+      "label": "Infantil Oro · Las Rozas",
       "ok": false,
-      "error": "fedhielo/fedhielo/31: HTTP 403"
+      "error": "rfep/rfep/2: HTTP 403"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas",
+      "label": "Infantil Oro · Pumas Galapagar",
+      "ok": false,
+      "error": "rfep/rfep/2: HTTP 403"
     }
   ]
 }
