@@ -1,3 +1,4 @@
+// HDK Match 0.7.0 reads official calendars directly in the browser.
 // HDK Match always requires fresh online data. No offline copies of fixtures
 // or HTML are stored by the service worker.
 self.addEventListener('install',event=>{

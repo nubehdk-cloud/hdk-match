@@ -15,7 +15,8 @@
 <section id="app"><div class="loading">Cargando próximos partidos…</div></section>
 <div class="foot">Partidos de liga: únicamente consultas oficiales verificadas (RFEDH · FMP · RFEP). Tecnificaciones, AROK y otras citas especiales: Google Calendar.</div>
 </main>
-<script>
+<script type="module">
+import { loadAppData } from './lib/app-data.js';
 (()=>{
 const state={person:'all',sport:'all',place:'all',data:null};
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -33,7 +34,7 @@ const icon=g=>g.sport==='ice'?'🧊':'🛼';
 const filtered=()=>[...(state.data?.games||[])].filter(g=>!finished(g)&&(state.person==='all'||g.players?.includes(state.person))&&(state.sport==='all'||g.sport===state.sport)&&(state.place==='all'||(state.place==='home'?isHome(g):!isHome(g)))).sort((a,b)=>(a.date+(a.time||'23:59')).localeCompare(b.date+(b.time||'23:59')));
 function card(g){
   const matchup=g.special&&!g.home&&!g.away?`<div class="teams" style="grid-template-columns:1fr"><div style="text-align:center">${esc(g.title||g.competition)}</div></div>`:`<div class="teams"><div class="h">${esc(g.home)}</div><div class="dash">—</div><div>${esc(g.away)}</div></div>`;
-  const note=g.hintApplied?'<div class="note">Hora completada manualmente porque el feed competitivo aún no la publica.</div>':'';
+  const note='';
   return `<article class="card${pumas(g)?' pumas':rozas(g)?' rozas':g.sport==='ice'?' hielo':''}"><div class="meta"><div><div class="tags">${g.special?'📅 Evento':' '+icon(g)} ${esc(g.competition)} · ${esc(names(g))}${g.round?` · ${esc(g.round)}`:''}</div><div class="when">${esc(whenText(g))}</div></div><div class="where">${isHome(g)?'CASA':'FUERA'}</div></div>${matchup}${g.venue?`<div class="venue">📍 ${esc(g.venue)}</div>`:''}${note}</article>`;
 }
 function render(){
@@ -42,16 +43,27 @@ function render(){
   const first=list[0];
   const failed=(state.data.status||[]).filter(s=>!s.ok);
   const officialCount=(state.data.games||[]).filter(g=>g.official===true).length;
-  const connectionWarning=failed.length?`<div class="error"><strong>${officialCount?'Actualización federativa parcial':'Sin conexión con las federaciones'}</strong><div>${failed.length} fuente(s) sin conexión. No se muestran partidos antiguos. Las tecnificaciones y demás citas especiales siguen disponibles.</div></div>`:'';
+  const connectionWarning=failed.length?`<div class="error"><strong>${officialCount?'Actualización federativa parcial':'Sin conexión con las federaciones'}</strong><div>${failed.length} fuente(s) sin conexión. No se muestran partidos antiguos.</div></div>`:'';
+  const calendarWarning=state.data.calendarStatus?.ok===false?'<div class="error">No se han podido cargar los eventos especiales. Vuelve a actualizar para consultar AROK y las tecnificaciones.</div>':'';
   const next=first?`<section class="next"><div class="eyebrow">${first.special?'Siguiente evento':'Siguiente partido oficial'}</div><div class="nextline"><div class="nextmatch">${icon(first)} ${esc(first.special&&!first.home&&!first.away?(first.title||first.competition):`${first.home} — ${first.away}`)}</div><div class="nextwhen">${esc(whenText(first))}</div></div></section>`:'';
   const cards=list.length?`<div class="list">${list.map(card).join('')}</div>`:`<div class="empty">${officialCount?'No hay partidos ni eventos especiales próximos con estos filtros.':'No hay eventos especiales próximos con estos filtros.'}</div>`;
-  const updated=state.data.generatedAt?new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(state.data.generatedAt)):'';
+  const updated=state.data.generatedAt?new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(state.data.generatedAt)):'';
   const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}</span><span class="${s.ok?'ok':'bad'}">${s.ok?`✓ ${s.games} · datos oficiales actualizados`:'⚠ sin actualización'}</span></div>`).join('');
-  app.innerHTML=`${connectionWarning}${next}${cards}<details><summary>Fuentes · última comprobación ${esc(updated)}</summary>${status}<div class="actions"><button class="linkbtn" id="reload">Recargar</button><button class="linkbtn" id="refresh">Actualizar federaciones</button></div></details>`;
+  app.innerHTML=`${connectionWarning}${calendarWarning}${next}${cards}<details><summary>Fuentes · última comprobación ${esc(updated)}</summary>${status}<div class="actions"><button class="linkbtn" id="reload">Recargar</button><button class="linkbtn" id="refresh">Actualizar federaciones</button></div></details>`;
   $('#reload')?.addEventListener('click',load);$('#refresh')?.addEventListener('click',refresh);
 }
-async function load(){try{$('#app').innerHTML='<div class="loading">Consultando federaciones oficiales…</div>';const r=await fetch(`/api/games?ts=${Date.now()}`,{cache:'no-store',headers:{'Cache-Control':'no-cache'}});const d=await r.json();if(!r.ok)throw new Error(d.error||'Error');state.data=d;render()}catch(e){$('#app').innerHTML=`<div class="error">No se pudo cargar HdK Match: ${esc(e.message||e)}</div>`}}
-async function refresh(){try{$('#app').innerHTML='<div class="loading">Actualizando desde las federaciones…</div>';const r=await fetch('/api/refresh',{method:'POST'});const d=await r.json();if(!r.ok)throw new Error(d.error||'Error');state.data=d;render()}catch(e){$('#app').innerHTML=`<div class="error">No se pudo actualizar: ${esc(e.message||e)}</div>`}}
+let activeLoad=null;
+function load(){
+  if(activeLoad)return activeLoad;
+  $('#app').innerHTML='<div class="loading">Consultando federaciones oficiales…</div>';
+  activeLoad=loadAppData().then(data=>{state.data=data;render()}).catch(e=>{
+    state.data=null;
+    $('#app').innerHTML=`<div class="error">No se pudo cargar HdK Match: ${esc(e.message||e)}<div class="actions"><button class="linkbtn" id="retry">Volver a intentar</button></div></div>`;
+    $('#retry')?.addEventListener('click',load);
+  }).finally(()=>{activeLoad=null});
+  return activeLoad;
+}
+function refresh(){return load()}
 function bind(group,key,attr){$$(group+' .chip').forEach(b=>b.addEventListener('click',()=>{state[key]=b.dataset[attr];$$(group+' .chip').forEach(x=>x.classList.toggle('active',x===b));render()}))}
 bind('#people','person','person');bind('#sports','sport','sport');bind('#place','place','place');
 let lastAutoLoad=0;
