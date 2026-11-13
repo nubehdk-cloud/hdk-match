@@ -43,13 +43,14 @@ function render(){
   const first=list[0];
   const failed=(state.data.status||[]).filter(s=>!s.ok);
   const officialCount=(state.data.games||[]).filter(g=>g.official===true).length;
-  const connectionWarning=failed.length?`<div class="error"><strong>${officialCount?'Actualización federativa parcial':'Sin conexión con las federaciones'}</strong><div>${failed.length} fuente(s) sin conexión. No se muestran partidos antiguos.</div></div>`:'';
+  const connectionWarning=failed.length?`<div class="error"><strong>${officialCount?'Actualización federativa parcial':'Sin conexión con las federaciones'}</strong><div>${failed.length} fuente(s) sin conexión. No se muestran partidos antiguos.</div><div class="actions"><button class="linkbtn" id="retryNow">Reintentar conexión</button></div></div>`:'';
   const calendarWarning=state.data.calendarStatus?.ok===false?'<div class="error">No se han podido cargar los eventos especiales. Vuelve a actualizar para consultar AROK y las tecnificaciones.</div>':'';
   const next=first?`<section class="next"><div class="eyebrow">${first.special?'Siguiente evento':'Siguiente partido oficial'}</div><div class="nextline"><div class="nextmatch">${icon(first)} ${esc(first.special&&!first.home&&!first.away?(first.title||first.competition):`${first.home} — ${first.away}`)}</div><div class="nextwhen">${esc(whenText(first))}</div></div></section>`:'';
   const cards=list.length?`<div class="list">${list.map(card).join('')}</div>`:`<div class="empty">${officialCount?'No hay partidos ni eventos especiales próximos con estos filtros.':'No hay eventos especiales próximos con estos filtros.'}</div>`;
   const updated=state.data.generatedAt?new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(state.data.generatedAt)):'';
-  const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}</span><span class="${s.ok?'ok':'bad'}">${s.ok?`✓ ${s.games} · datos oficiales actualizados`:'⚠ sin actualización'}</span></div>`).join('');
+  const status=(state.data.status||[]).map(s=>`<div class="statusrow"><span>${esc(s.label)}${s.officialUrl?` <a target="_blank" rel="noopener noreferrer" href="${esc(s.officialUrl)}" style="font-size:11px">Calendario oficial</a>`:''}</span><span class="${s.ok?'ok':'bad'}">${s.ok?`✓ ${s.games} · actualizado`:'⚠ sin conexión'}</span></div>`).join('');
   app.innerHTML=`${connectionWarning}${calendarWarning}${next}${cards}<details><summary>Fuentes · última comprobación ${esc(updated)}</summary>${status}<div class="actions"><button class="linkbtn" id="reload">Recargar</button><button class="linkbtn" id="refresh">Actualizar federaciones</button></div></details>`;
+  $('#retryNow')?.addEventListener('click',load);
   $('#reload')?.addEventListener('click',load);$('#refresh')?.addEventListener('click',refresh);
 }
 let activeLoad=null;
@@ -70,6 +71,8 @@ let lastAutoLoad=0;
 function autoLoad(){const now=Date.now();if(now-lastAutoLoad<1500)return;lastAutoLoad=now;load()}
 if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js').then(reg=>reg.update()).catch(()=>{});
 window.addEventListener('pageshow',autoLoad);
+// Recheck while the app is open after temporary federation connection failures.
+setInterval(()=>{if(document.visibilityState==='visible'&&state.data?.status?.some(s=>!s.ok)) load()},15*60*1000);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')autoLoad()});
 autoLoad();
 })();
