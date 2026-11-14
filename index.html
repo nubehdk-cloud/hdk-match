@@ -7,48 +7,18 @@
 :root{color-scheme:light dark;--bg:#f4f5f7;--card:#fff;--text:#111827;--muted:#6b7280;--line:#e5e7eb;--accent:#111827;--ok:#166534;--warn:#92400e}
 @media(prefers-color-scheme:dark){:root{--bg:#0b0d10;--card:#15181d;--text:#f5f7fa;--muted:#a8afb9;--line:#2a2f37;--accent:#f5f7fa;--ok:#86efac;--warn:#fcd34d}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}button{font:inherit;color:inherit}.wrap{max-width:760px;margin:auto;padding:18px 14px 40px}.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.title{font-size:26px;font-weight:850;letter-spacing:-.5px}.sub{font-size:13px;color:var(--muted);margin-top:3px}.season{border:1px solid var(--line);border-radius:999px;padding:6px 9px;font-size:12px;color:var(--muted)}.sectionlabel{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-top:15px;margin-bottom:6px}.filters{display:flex;flex-wrap:wrap;gap:8px}.chip{min-height:42px;padding:0 13px;border:1px solid var(--line);background:var(--card);border-radius:12px}.chip.active{background:var(--accent);color:var(--bg);font-weight:750}.next,.card{background:var(--card);border:1px solid var(--line);border-radius:16px}.card.pumas{background:#e6f7e9;border-color:#b7dfbd;color:#153a24}.card.pumas .tags,.card.pumas .venue,.card.pumas .note{color:#426c4d}.card.pumas .where{border-color:#a3cfab}.card.rozas{background:#e6f3ff;border-color:#b8d8f4;color:#183a5b}.card.rozas .tags,.card.rozas .venue,.card.rozas .note{color:#496c8d}.card.rozas .where{border-color:#a6cbea}.card.hielo{background:#fde9e9;border-color:#f2c0c0;color:#622b2b}.card.hielo .tags,.card.hielo .venue,.card.hielo .note{color:#895555}.card.hielo .where{border-color:#e7b0b0}.next{margin-top:16px;padding:13px}.eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}.nextline{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-top:5px}.nextmatch{font-weight:800}.nextwhen{font-size:13px;text-align:right;white-space:nowrap}.list{display:grid;gap:9px;margin-top:10px}.card{padding:13px}.meta{display:flex;justify-content:space-between;gap:10px}.tags{font-size:12px;color:var(--muted);line-height:1.45}.when{font-size:14px;font-weight:750;margin-top:3px}.where{font-size:11px;border:1px solid var(--line);border-radius:9px;padding:5px 7px;white-space:nowrap;align-self:flex-start}.teams{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;margin-top:12px;font-size:15px;font-weight:750}.teams .h{text-align:right}.dash{color:var(--muted)}.venue{font-size:12px;color:var(--muted);margin-top:9px}.note{font-size:11px;color:var(--muted);margin-top:7px}.empty,.error,.loading{margin-top:16px;padding:18px;border:1px solid var(--line);border-radius:16px;text-align:center;color:var(--muted);background:var(--card)}.error{color:var(--warn)}details{margin-top:18px;border-top:1px solid var(--line);padding-top:12px}summary{cursor:pointer;font-size:13px;color:var(--muted)}.statusrow{display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:7px 0;border-bottom:1px solid var(--line)}.ok{color:var(--ok)}.bad{color:var(--warn)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.linkbtn{min-height:42px;border:1px solid var(--line);border-radius:11px;background:var(--card);padding:0 12px}.foot{font-size:11px;color:var(--muted);margin-top:18px}@media(max-width:420px){.nextline{display:block}.nextwhen{text-align:left;margin-top:4px}.teams{font-size:14px}.wrap{padding-left:11px;padding-right:11px}}
-.official{margin-top:16px;padding:13px;background:var(--card);border:1px solid var(--line);border-radius:16px}.official-title{font-weight:800;margin-bottom:6px}.official-note{font-size:12px;line-height:1.5;color:var(--muted);margin-bottom:12px}.official-tabs{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}.official-tabs button{border:1px solid var(--line);background:var(--card);padding:10px 12px;border-radius:10px;min-height:42px}.official-tabs button.active{background:var(--accent);color:var(--bg);font-weight:750}.official-frame{border:1px solid var(--line);border-radius:12px;width:100%;height:620px;background:white}.official-open{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:inherit}.official[hidden]{display:none}</style></head><body><main class="wrap">
+</style></head><body><main class="wrap">
 <div class="top"><div><div class="title">HdK Match</div><div class="sub">Próximos partidos · Andrés y Gastón</div></div><div class="season">26/27</div></div>
 <div class="sectionlabel">Jugador</div><div class="filters" id="people"><button class="chip active" data-person="all">Todos</button><button class="chip" data-person="andres">Andrés</button><button class="chip" data-person="gaston">Gastón</button></div>
 <div class="sectionlabel">Deporte</div><div class="filters" id="sports"><button class="chip active" data-sport="all">Todos</button><button class="chip" data-sport="ice">🧊 Hielo</button><button class="chip" data-sport="line">🛼 Línea</button></div>
 <div class="sectionlabel">Desplazamiento</div><div class="filters" id="place"><button class="chip active" data-place="all">Todos</button><button class="chip" data-place="home">🏠 Casa</button><button class="chip" data-place="away">🚗 Fuera</button></div>
-<section id="federation-viewer" class="official" hidden>
-<div class="official-title">Calendarios oficiales en directo</div>
-<div class="official-note">La consulta automática no está disponible. Puedes ver las webs de las federaciones aquí mismo, sin copiar partidos antiguos ni alterar sus horarios. Elige una competición y consulta el calendario oficial.</div>
-<div class="official-tabs" id="official-tabs"><button type="button" data-fed="fmp" class="active">🛼 FMP Infantil</button><button type="button" data-fed="rfedh">🧊 RFEDH U15</button><button type="button" data-fed="rfep">🛼 RFEP Infantil Oro</button></div>
-<iframe id="official-frame" class="official-frame" title="Calendario oficial de la federación" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<a id="official-open" class="official-open" href="https://www.hockeylinea.fmp.es/league/4798" target="_blank" rel="noopener noreferrer">Abrir calendario en la web oficial</a>
-<div class="official-note" style="margin-top:8px;margin-bottom:0">Si una federación no permite mostrar su página integrada, utiliza el enlace de apertura directa.</div>
-</section>
 <section id="app"><div class="loading">Cargando próximos partidos…</div></section>
-
 <div class="foot">Partidos de liga: únicamente consultas oficiales verificadas (RFEDH · FMP · RFEP). Tecnificaciones, AROK y otras citas especiales: Google Calendar.</div>
 </main>
 <script type="module">
 import { loadAppData } from './lib/app-data.js';
 (()=>{
 const state={person:'all',sport:'all',place:'all',data:null};
-const officialWebs={
-  fmp:{label:'FMP · Infantil 1',url:'https://www.hockeylinea.fmp.es/league/4798'},
-  rfedh:{label:'RFEDH · U15 hielo',url:'https://www.hockey.fedhielo.com/league/3657'},
-  rfep:{label:'RFEP · Infantil Oro',url:'https://www.hockeylinea.fep.es/league/3609'}
-};
-let shownFederation='fmp';
-function setOfficialFederation(id){
-  const source=officialWebs[id];if(!source)return;
-  shownFederation=id;
-  document.querySelectorAll('#official-tabs button').forEach(b=>{b.classList.toggle('active',b.dataset.fed===id);b.setAttribute('aria-pressed',String(b.dataset.fed===id));});
-  const frame=document.querySelector('#official-frame');
-  if(frame.dataset.fed!==id){frame.src=source.url;frame.dataset.fed=id;}
-  frame.title='Calendario oficial: '+source.label;
-  const link=document.querySelector('#official-open');
-  link.href=source.url;link.textContent='Abrir '+source.label+' en su web oficial';
-}
-function showOfficialViewer(visible){
-  const viewer=document.querySelector('#federation-viewer');
-  viewer.hidden=!visible;
-  if(visible)setOfficialFederation(shownFederation);
-}
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s||'').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
@@ -73,8 +43,7 @@ function render(){
   const first=list[0];
   const failed=(state.data.status||[]).filter(s=>!s.ok);
   const officialCount=(state.data.games||[]).filter(g=>g.official===true).length;
-  const connectionWarning=failed.length?`<div class="error"><strong>${officialCount?'Actualización federativa parcial':'Sin conexión con las federaciones'}</strong><div>${failed.length} fuente(s) sin conexión. La consulta automática no ha podido obtener los partidos; consulta los calendarios oficiales integrados más abajo. No se muestran partidos antiguos.</div><div class="actions"><button class="linkbtn" id="retryNow">Reintentar conexión</button></div></div>`:'';
-  showOfficialViewer(failed.length>0);
+  const connectionWarning=failed.length?`<div class="error"><strong>${officialCount?'Actualización federativa parcial':'Sin conexión con las federaciones'}</strong><div>${failed.length} fuente(s) sin conexión. No se muestran partidos antiguos.</div><div class="actions"><button class="linkbtn" id="retryNow">Reintentar conexión</button></div></div>`:'';
   const calendarWarning=state.data.calendarStatus?.ok===false?'<div class="error">No se han podido cargar los eventos especiales. Vuelve a actualizar para consultar AROK y las tecnificaciones.</div>':'';
   const next=first?`<section class="next"><div class="eyebrow">${first.special?'Siguiente evento':'Siguiente partido oficial'}</div><div class="nextline"><div class="nextmatch">${icon(first)} ${esc(first.special&&!first.home&&!first.away?(first.title||first.competition):`${first.home} — ${first.away}`)}</div><div class="nextwhen">${esc(whenText(first))}</div></div></section>`:'';
   const cards=list.length?`<div class="list">${list.map(card).join('')}</div>`:`<div class="empty">${officialCount?'No hay partidos ni eventos especiales próximos con estos filtros.':'No hay eventos especiales próximos con estos filtros.'}</div>`;
@@ -98,7 +67,6 @@ function load(){
 function refresh(){return load()}
 function bind(group,key,attr){$$(group+' .chip').forEach(b=>b.addEventListener('click',()=>{state[key]=b.dataset[attr];$$(group+' .chip').forEach(x=>x.classList.toggle('active',x===b));render()}))}
 bind('#people','person','person');bind('#sports','sport','sport');bind('#place','place','place');
-document.querySelectorAll('#official-tabs button').forEach(b=>b.addEventListener('click',()=>setOfficialFederation(b.dataset.fed)));
 let lastAutoLoad=0;
 function autoLoad(){const now=Date.now();if(now-lastAutoLoad<1500)return;lastAutoLoad=now;load()}
 if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js').then(reg=>reg.update()).catch(()=>{});
