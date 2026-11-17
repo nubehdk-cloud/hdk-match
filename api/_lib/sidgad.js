@@ -1,1 +1,1 @@
-export { loadGames, parseCalendarRows } from '../../lib/sidgad.js';
+export {parseOfficialRows,buildSnapshot} from '../../lib/sidgad.js';

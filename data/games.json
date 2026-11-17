@@ -1,42 +1,1880 @@
 {
-  "generatedAt": "2026-11-14T00:52:14.107Z",
+  "generatedAt": "2026-11-17T09:24:13.125Z",
+  "checkedAt": "2026-11-17T09:24:13.125Z",
   "timezone": "Europe/Madrid",
-  "games": [],
+  "updatePolicy": {
+    "weekday": "TH",
+    "hour": 12,
+    "timezone": "Europe/Madrid"
+  },
+  "games": [
+    {
+      "id": "rfedh_u18:801",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-09-19",
+      "time": "15:30",
+      "home": "LA NEVERA",
+      "away": "CH JACA",
+      "round": "JORNADA 1",
+      "matchId": "801",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 1:PUMAS:CPLM A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-09-26",
+      "time": "09:20",
+      "home": "PUMAS",
+      "away": "CPLM A",
+      "round": "JORNADA 1",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 1:LAS ROZAS:PINGUINOS A",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-09-26",
+      "time": "13:10",
+      "home": "LAS ROZAS",
+      "away": "PINGÜINOS A",
+      "round": "JORNADA 1",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "rfedh_u18:805",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-09-26",
+      "time": "15:50",
+      "home": "LA NEVERA",
+      "away": "CDH BIPOLO",
+      "round": "JORNADA 2",
+      "matchId": "805",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u15:567",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2026-10-03",
+      "time": "13:00",
+      "home": "CH JACA",
+      "away": "LA NEVERA",
+      "round": "JORNADA 17",
+      "matchId": "567",
+      "venue": null
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 2:LAS ROZAS:CPLM B",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2026-10-04",
+      "time": "12:10",
+      "home": "LAS ROZAS",
+      "away": "CPLM B",
+      "round": "JORNADA 2",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 2:PINGUINOS A:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-10-04",
+      "time": "12:45",
+      "home": "PINGÜINOS A",
+      "away": "PUMAS",
+      "round": "JORNADA 2",
+      "matchId": null,
+      "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS"
+    },
+    {
+      "id": "rfedh_u18:809",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-10-04",
+      "time": "14:30",
+      "home": "CHH TXURI URDIN IHT",
+      "away": "LA NEVERA",
+      "round": "JORNADA 3",
+      "matchId": "809",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil:JORNADA 2:TRES CANTOS A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-10-04",
+      "time": "17:00",
+      "home": "TRES CANTOS A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 2",
+      "matchId": null,
+      "venue": "CENTRO DEPORTIVO LAURA OTER"
+    },
+    {
+      "id": "rfedh_u18:813",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-10-10",
+      "time": "21:40",
+      "home": "LA NEVERA",
+      "away": "KOSNER HUARTE",
+      "round": "JORNADA 4",
+      "matchId": "813",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 3:PUMAS:TRES CANTOS A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-10-16",
+      "time": "20:45",
+      "home": "PUMAS",
+      "away": "TRES CANTOS A",
+      "round": "JORNADA 3",
+      "matchId": null,
+      "venue": "CENTRO DEPORTIVO LAURA OTER"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 3:MAMUTS A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-10-17",
+      "time": "12:00",
+      "home": "MAMUTS A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 3",
+      "matchId": null,
+      "venue": "I.D. MUN. BASICA LOS ROSALES"
+    },
+    {
+      "id": "rfep_infantil_oro:JORNADA 1:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-10-24",
+      "time": "12:30",
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "PUMAS DEL NORTE",
+      "round": "JORNADA 1",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO DE LA PAU - SANT ADRIÀ"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas:JORNADA 1:JOKER FLOORS LAS ROZAS:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro_pumas",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-10-24",
+      "time": "12:30",
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "PUMAS DEL NORTE",
+      "round": "JORNADA 1",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO DE LA PAU - SANT ADRIÀ"
+    },
+    {
+      "id": "rfedh_u18:824",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-10-24",
+      "time": "15:40",
+      "home": "LA NEVERA",
+      "away": "MILENIO PANTHERS",
+      "round": "JORNADA 6",
+      "matchId": "824",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfep_infantil_oro:JORNADA 2:BURDINOLA IK:JOKER FLOORS LAS ROZAS",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-10-24",
+      "time": "16:00",
+      "home": "BURDINOLA IK",
+      "away": "JOKER FLOORS LAS ROZAS",
+      "round": "JORNADA 2",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO DE LA PAU - SANT ADRIÀ"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas:JORNADA 2:PUMAS DEL NORTE:ESPANYA HOQUEI CLUB",
+      "sourceId": "rfep_infantil_oro_pumas",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-10-24",
+      "time": "17:15",
+      "home": "PUMAS DEL NORTE",
+      "away": "ESPANYA HOQUEI CLUB",
+      "round": "JORNADA 2",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO DE LA PAU - SANT ADRIÀ"
+    },
+    {
+      "id": "rfedh_u18:856",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-10-25",
+      "time": "15:10",
+      "home": "LA NEVERA",
+      "away": "MILENIO PANTHERS",
+      "round": "JORNADA 14",
+      "matchId": "856",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u18:825",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-11-01",
+      "time": "13:40",
+      "home": "LA NEVERA",
+      "away": "CG PUIGCERDA",
+      "round": "JORNADA 7",
+      "matchId": "825",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u18:829",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-11-07",
+      "time": "21:40",
+      "home": "LA NEVERA",
+      "away": "CHH TXURI URDIN IHT",
+      "round": "JORNADA 8",
+      "matchId": "829",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 3:TRES CANTOS B:LAS ROZAS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2026-11-08",
+      "time": "14:15",
+      "home": "TRES CANTOS B",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 3",
+      "matchId": null,
+      "venue": "CENTRO DEPORTIVO LAURA OTER"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 4:LAS ROZAS:PUMAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-11-14",
+      "time": "19:40",
+      "home": "LAS ROZAS",
+      "away": "PUMAS",
+      "round": "JORNADA 4",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 4:LAS ROZAS:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-11-14",
+      "time": "19:40",
+      "home": "LAS ROZAS",
+      "away": "PUMAS",
+      "round": "JORNADA 4",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "rfedh_u15:543",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2026-11-14",
+      "time": "22:00",
+      "home": "LA NEVERA",
+      "away": "QUIMERAS VALDEMORO",
+      "round": "JORNADA 11",
+      "matchId": "543",
+      "venue": null
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 4:LAS ROZAS:MAMUTS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2026-11-15",
+      "time": "14:40",
+      "home": "LAS ROZAS",
+      "away": "MAMUTS",
+      "round": "JORNADA 4",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "rfedh_u18:833",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-11-15",
+      "time": "15:10",
+      "home": "LA NEVERA",
+      "away": "CG PUIGCERDA",
+      "round": "JORNADA 9",
+      "matchId": "833",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u15:572",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2026-11-21",
+      "time": "14:35",
+      "home": "LA NEVERA",
+      "away": "KOSNER HUARTE",
+      "round": "JORNADA 18",
+      "matchId": "572",
+      "venue": null
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 5:PUMAS:MAMUTS A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-11-21",
+      "time": "19:45",
+      "home": "PUMAS",
+      "away": "MAMUTS A",
+      "round": "JORNADA 5",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 5:CPLM A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-11-22",
+      "time": "10:30",
+      "home": "CPLM A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 5",
+      "matchId": null,
+      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 6:CPLM A:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-11-28",
+      "time": "17:00",
+      "home": "CPLM A",
+      "away": "PUMAS",
+      "round": "JORNADA 6",
+      "matchId": null,
+      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 5:LOBOS CASTILLA:LAS ROZAS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2026-11-28",
+      "time": "17:30",
+      "home": "LOBOS CASTILLA",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 5",
+      "matchId": null,
+      "venue": "COLEGIO CASTILLA"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 6:PINGUINOS A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-11-28",
+      "time": "19:00",
+      "home": "PINGÜINOS A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 6",
+      "matchId": null,
+      "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS"
+    },
+    {
+      "id": "rfedh_u15:552",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2026-12-05",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "BARÇA HOCKEY GEL",
+      "round": "JORNADA 13",
+      "matchId": "552",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:845",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-12-05",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "BARÇA HOCKEY GEL",
+      "round": "JORNADA 12",
+      "matchId": "845",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u18:844",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-12-06",
+      "time": "14:45",
+      "home": "MILENIO PANTHERS",
+      "away": "LA NEVERA",
+      "round": "JORNADA 11",
+      "matchId": "844",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u15:507",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2026-12-12",
+      "time": "21:30",
+      "home": "QUIMERAS VALDEMORO",
+      "away": "LA NEVERA",
+      "round": "JORNADA 2",
+      "matchId": "507",
+      "venue": null
+    },
+    {
+      "id": "fmp_infantil:JORNADA 7:LAS ROZAS:TRES CANTOS A",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-12-12",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "TRES CANTOS A",
+      "round": "JORNADA 7",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 6:LAS ROZAS:TRES CANTOS A",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2026-12-12",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "TRES CANTOS A",
+      "round": "JORNADA 6",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 7:PUMAS:PINGUINOS A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2026-12-13",
+      "time": "12:15",
+      "home": "PUMAS",
+      "away": "PINGÜINOS A",
+      "round": "JORNADA 7",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL GALAPAGAR"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas:JORNADA 3:SAB TUCANS ASME:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro_pumas",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-12-19",
+      "time": "10:00",
+      "home": "SAB TUCANS ASME",
+      "away": "PUMAS DEL NORTE",
+      "round": "JORNADA 3",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL MARCELO ESCUDERO"
+    },
+    {
+      "id": "rfep_infantil_oro:JORNADA 3:ESPANYA HOQUEI CLUB:JOKER FLOORS LAS ROZAS",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-12-19",
+      "time": "12:30",
+      "home": "ESPANYA HOQUEI CLUB",
+      "away": "JOKER FLOORS LAS ROZAS",
+      "round": "JORNADA 3",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL MARCELO ESCUDERO"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas:JORNADA 4:PUMAS DEL NORTE:BURDINOLA IK",
+      "sourceId": "rfep_infantil_oro_pumas",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-12-19",
+      "time": "16:00",
+      "home": "PUMAS DEL NORTE",
+      "away": "BURDINOLA IK",
+      "round": "JORNADA 4",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL MARCELO ESCUDERO"
+    },
+    {
+      "id": "rfep_infantil_oro:JORNADA 4:JOKER FLOORS LAS ROZAS:METROPOLITANO HC",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-12-19",
+      "time": "18:30",
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "METROPOLITANO HC",
+      "round": "JORNADA 4",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL MARCELO ESCUDERO"
+    },
+    {
+      "id": "rfedh_u18:849",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2026-12-19",
+      "time": null,
+      "home": "CH JACA",
+      "away": "LA NEVERA",
+      "round": "JORNADA 13",
+      "matchId": "849",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfep_infantil_oro:JORNADA 5:JOKER FLOORS LAS ROZAS:SAB TUCANS ASME",
+      "sourceId": "rfep_infantil_oro",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-12-20",
+      "time": "11:15",
+      "home": "JOKER FLOORS LAS ROZAS",
+      "away": "SAB TUCANS ASME",
+      "round": "JORNADA 5",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL MARCELO ESCUDERO"
+    },
+    {
+      "id": "rfep_infantil_oro_pumas:JORNADA 5:METROPOLITANO HC:PUMAS DEL NORTE",
+      "sourceId": "rfep_infantil_oro_pumas",
+      "source": "RFEP",
+      "sourceUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "competition": "Liga Oro Infantil",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "3609",
+      "official": true,
+      "date": "2026-12-20",
+      "time": "12:30",
+      "home": "METROPOLITANO HC",
+      "away": "PUMAS DEL NORTE",
+      "round": "JORNADA 5",
+      "matchId": null,
+      "venue": "POLIDEPORTIVO MUNICIPAL MARCELO ESCUDERO"
+    },
+    {
+      "id": "rfedh_u15:561",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-01-09",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "CDH BIPOLO",
+      "round": "JORNADA 16",
+      "matchId": "561",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:857",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-01-09",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "CDH BIPOLO",
+      "round": "JORNADA 15",
+      "matchId": "857",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 7:CPLM A:LAS ROZAS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-01-09",
+      "time": null,
+      "home": "CPLM A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 7",
+      "matchId": null,
+      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA"
+    },
+    {
+      "id": "rfedh_u15:504",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-01-16",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "MILENIO PANTHERS",
+      "round": "JORNADA 1",
+      "matchId": "504",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:861",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-01-16",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "CHH TXURI URDIN IHT",
+      "round": "JORNADA 16",
+      "matchId": "861",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil:JORNADA 8:LAS ROZAS:MAMUTS A",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-01-16",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "MAMUTS A",
+      "round": "JORNADA 8",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 8:TRES CANTOS A:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-01-16",
+      "time": null,
+      "home": "TRES CANTOS A",
+      "away": "PUMAS",
+      "round": "JORNADA 8",
+      "matchId": null,
+      "venue": "CENTRO DEPORTIVO LAURA OTER"
+    },
+    {
+      "id": "rfedh_u15:531",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-01-23",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "CH JACA",
+      "round": "JORNADA 8",
+      "matchId": "531",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:865",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-01-23",
+      "time": null,
+      "home": "KOSNER HUARTE",
+      "away": "LA NEVERA",
+      "round": "JORNADA 17",
+      "matchId": "865",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil:JORNADA 9:PUMAS:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-01-23",
+      "time": null,
+      "home": "PUMAS",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 9",
+      "matchId": null,
+      "venue": "A DESIGNAR"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 9:PUMAS:LAS ROZAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-01-23",
+      "time": null,
+      "home": "PUMAS",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 9",
+      "matchId": null,
+      "venue": "A DESIGNAR"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 9:CPLM B:LAS ROZAS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-01-23",
+      "time": null,
+      "home": "CPLM B",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 9",
+      "matchId": null,
+      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA"
+    },
+    {
+      "id": "rfedh_u15:536",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-01-30",
+      "time": null,
+      "home": "KOSNER HUARTE",
+      "away": "LA NEVERA",
+      "round": "JORNADA 9",
+      "matchId": "536",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u15:540",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-01-31",
+      "time": null,
+      "home": "MILENIO PANTHERS",
+      "away": "LA NEVERA",
+      "round": "JORNADA 10",
+      "matchId": "540",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:869",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-02-06",
+      "time": null,
+      "home": "CG PUIGCERDA",
+      "away": "LA NEVERA",
+      "round": "JORNADA 18",
+      "matchId": "869",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u18:873",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-02-06",
+      "time": null,
+      "home": "BARÇA HOCKEY GEL",
+      "away": "LA NEVERA",
+      "round": "JORNADA 19",
+      "matchId": "873",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil:JORNADA 10:LAS ROZAS:CPLM A",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-02-06",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "CPLM A",
+      "round": "JORNADA 10",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 10:MAMUTS A:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-02-06",
+      "time": null,
+      "home": "MAMUTS A",
+      "away": "PUMAS",
+      "round": "JORNADA 10",
+      "matchId": null,
+      "venue": "I.D. MUN. BASICA LOS ROSALES"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 10:LAS ROZAS:TRES CANTOS B",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-02-06",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "TRES CANTOS B",
+      "round": "JORNADA 10",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "rfedh_u15:546",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-02-07",
+      "time": null,
+      "home": "CG PUIGCERDA",
+      "away": "LA NEVERA",
+      "round": "JORNADA 12",
+      "matchId": "546",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u15:524",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-02-14",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "CHH TXURI URDIN IHT",
+      "round": "JORNADA 6",
+      "matchId": "524",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u15:560",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-02-20",
+      "time": null,
+      "home": "CHH TXURI URDIN IHT",
+      "away": "LA NEVERA",
+      "round": "JORNADA 15",
+      "matchId": "560",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:877",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-02-20",
+      "time": null,
+      "home": "KOSNER HUARTE",
+      "away": "LA NEVERA",
+      "round": "JORNADA 20",
+      "matchId": "877",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "fmp_infantil:JORNADA 11:LAS ROZAS:PINGUINOS A",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-02-20",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "PINGÜINOS A",
+      "round": "JORNADA 11",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 11:PUMAS:CPLM A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-02-20",
+      "time": null,
+      "home": "PUMAS",
+      "away": "CPLM A",
+      "round": "JORNADA 11",
+      "matchId": null,
+      "venue": "A DESIGNAR"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 11:MAMUTS:LAS ROZAS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-02-20",
+      "time": null,
+      "home": "MAMUTS",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 11",
+      "matchId": null,
+      "venue": "I.D. MUN. BASICA LOS ROSALES"
+    },
+    {
+      "id": "rfedh_u15:525",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-02-21",
+      "time": null,
+      "home": "CDH BIPOLO",
+      "away": "LA NEVERA",
+      "round": "JORNADA 7",
+      "matchId": "525",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:881",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": "2027-02-27",
+      "time": null,
+      "home": "CDH BIPOLO",
+      "away": "LA NEVERA",
+      "round": "JORNADA 21",
+      "matchId": "881",
+      "venue": null,
+      "requiresCallup": true
+    },
+    {
+      "id": "rfedh_u15:510",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": "2027-03-06",
+      "time": null,
+      "home": "LA NEVERA",
+      "away": "CG PUIGCERDA",
+      "round": "JORNADA 3",
+      "matchId": "510",
+      "venue": null
+    },
+    {
+      "id": "fmp_infantil:JORNADA 12:TRES CANTOS A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-03-13",
+      "time": null,
+      "home": "TRES CANTOS A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 12",
+      "matchId": null,
+      "venue": "CENTRO DEPORTIVO LAURA OTER"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 12:PINGUINOS A:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-03-13",
+      "time": null,
+      "home": "PINGÜINOS A",
+      "away": "PUMAS",
+      "round": "JORNADA 12",
+      "matchId": null,
+      "venue": "INST. DEPORT. MUNICIPAL LAS TABLAS"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 12:LAS ROZAS:LOBOS CASTILLA",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-03-13",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "LOBOS CASTILLA",
+      "round": "JORNADA 12",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 13:MAMUTS A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-04-03",
+      "time": null,
+      "home": "MAMUTS A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 13",
+      "matchId": null,
+      "venue": "I.D. MUN. BASICA LOS ROSALES"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 13:PUMAS:TRES CANTOS A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-04-03",
+      "time": null,
+      "home": "PUMAS",
+      "away": "TRES CANTOS A",
+      "round": "JORNADA 13",
+      "matchId": null,
+      "venue": "A DESIGNAR"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 13:TRES CANTOS A:LAS ROZAS",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-04-03",
+      "time": null,
+      "home": "TRES CANTOS A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 13",
+      "matchId": null,
+      "venue": "CENTRO DEPORTIVO LAURA OTER"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 14:LAS ROZAS:PUMAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-04-10",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "PUMAS",
+      "round": "JORNADA 14",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 14:LAS ROZAS:PUMAS",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-04-10",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "PUMAS",
+      "round": "JORNADA 14",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "fmp_infantil:JORNADA 15:CPLM A:LAS ROZAS",
+      "sourceId": "fmp_infantil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-04-17",
+      "time": null,
+      "home": "CPLM A",
+      "away": "LAS ROZAS",
+      "round": "JORNADA 15",
+      "matchId": null,
+      "venue": "CENTRO DEP. MUN. FRANCISCO FDEZ. OCHOA"
+    },
+    {
+      "id": "fmp_infantil_pumas:JORNADA 15:PUMAS:MAMUTS A",
+      "sourceId": "fmp_infantil_pumas",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "competition": "Liga Infantil 1 · Madrileña",
+      "sport": "line",
+      "players": [
+        "gaston"
+      ],
+      "leagueId": "4798",
+      "official": true,
+      "date": "2027-04-17",
+      "time": null,
+      "home": "PUMAS",
+      "away": "MAMUTS A",
+      "round": "JORNADA 15",
+      "matchId": null,
+      "venue": "A DESIGNAR"
+    },
+    {
+      "id": "fmp_juvenil:JORNADA 14:LAS ROZAS:CPLM A",
+      "sourceId": "fmp_juvenil",
+      "source": "FMP",
+      "sourceUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "competition": "Liga Juvenil · Madrileña",
+      "sport": "line",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "4799",
+      "official": true,
+      "date": "2027-04-17",
+      "time": null,
+      "home": "LAS ROZAS",
+      "away": "CPLM A",
+      "round": "JORNADA 14",
+      "matchId": null,
+      "venue": "CENTRO DE PATINAJE LAS ROZAS"
+    },
+    {
+      "id": "rfedh_u15:516",
+      "sourceId": "rfedh_u15",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3657",
+      "competition": "Liga Nacional Hockey Hielo U15",
+      "sport": "ice",
+      "players": [
+        "andres",
+        "gaston"
+      ],
+      "leagueId": "3657",
+      "official": true,
+      "date": null,
+      "time": null,
+      "home": "BARÇA HOCKEY GEL",
+      "away": "LA NEVERA",
+      "round": "JORNADA 4",
+      "matchId": "516",
+      "venue": null
+    },
+    {
+      "id": "rfedh_u18:817",
+      "sourceId": "rfedh_u18",
+      "source": "RFEDH",
+      "sourceUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "competition": "Liga Nacional Hockey Hielo U18",
+      "sport": "ice",
+      "players": [
+        "andres"
+      ],
+      "leagueId": "3646",
+      "official": true,
+      "date": null,
+      "time": null,
+      "home": "BARÇA HOCKEY GEL",
+      "away": "LA NEVERA",
+      "round": "JORNADA 5",
+      "matchId": "817",
+      "venue": null,
+      "requiresCallup": true
+    }
+  ],
   "status": [
-    {
-      "id": "fmp_infantil",
-      "label": "Infantil Madrileña · Las Rozas",
-      "officialUrl": "https://www.hockeylinea.fmp.es/league/4798",
-      "ok": false,
-      "error": "fmp/fmp/2: HTTP 403"
-    },
-    {
-      "id": "fmp_infantil_pumas",
-      "label": "Infantil Madrileña · Pumas Galapagar",
-      "officialUrl": "https://www.hockeylinea.fmp.es/league/4798",
-      "ok": false,
-      "error": "fmp/fmp/2: HTTP 403"
-    },
     {
       "id": "rfedh_u15",
       "label": "U15 Hielo · Majadahonda",
       "officialUrl": "https://www.hockey.fedhielo.com/league/3657",
-      "ok": false,
-      "error": "fedhielo/fedhielo/31: HTTP 403"
+      "ok": true,
+      "games": 16,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
+    },
+    {
+      "id": "rfedh_u18",
+      "label": "U18 Hielo · Majadahonda",
+      "officialUrl": "https://www.hockey.fedhielo.com/league/3646",
+      "ok": true,
+      "games": 20,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
+    },
+    {
+      "id": "fmp_infantil",
+      "label": "Infantil Madrileña · Las Rozas",
+      "officialUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "ok": true,
+      "games": 15,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
+    },
+    {
+      "id": "fmp_infantil_pumas",
+      "label": "Infantil Madrileña · Pumas Galapagar",
+      "officialUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4798&vista=calendar",
+      "ok": true,
+      "games": 15,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
+    },
+    {
+      "id": "fmp_juvenil",
+      "label": "Juvenil Madrileña · Las Rozas",
+      "officialUrl": "https://www.hockeylinea.fmp.es/league/4798?liga=4799&vista=calendar",
+      "ok": true,
+      "games": 12,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
     },
     {
       "id": "rfep_infantil_oro",
       "label": "Infantil Oro · Las Rozas",
-      "officialUrl": "https://www.hockeylinea.fep.es/league/3609",
-      "ok": false,
-      "error": "rfep/rfep/2: HTTP 403"
+      "officialUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "ok": true,
+      "games": 5,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
     },
     {
       "id": "rfep_infantil_oro_pumas",
       "label": "Infantil Oro · Pumas Galapagar",
-      "officialUrl": "https://www.hockeylinea.fep.es/league/3609",
-      "ok": false,
-      "error": "rfep/rfep/2: HTTP 403"
+      "officialUrl": "https://www.hockeylinea.fep.es/league/3609?liga=3609&vista=calendar",
+      "ok": true,
+      "games": 5,
+      "lastSuccessAt": "2026-11-17T09:24:13.125Z",
+      "checkedAt": "2026-11-17T09:24:13.125Z",
+      "mode": "official-browser-calendar"
     }
   ]
 }

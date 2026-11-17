@@ -1,32 +1,19 @@
-// Official federation-only updater
+// Read JSON captures from stdin; this importer never contacts a federation.
 import fs from 'node:fs';
-import path from 'node:path';
-import { loadGames } from '../api/_lib/sidgad.js';
-
-const outPath=path.resolve('data/games.json');
-const data=await loadGames();
-
-fs.mkdirSync(path.dirname(outPath),{recursive:true});
-let old=null;
-try{ old=JSON.parse(fs.readFileSync(outPath,'utf8')); }catch{}
-
-// Failed official sources contribute no matches. Never preserve older fixtures
-// after an unsuccessful download.
-const verified=new Set((data.status||[]).filter(s=>s.ok===true).map(s=>s.id));
-data.games=(data.games||[]).filter(g=>g.official===true&&verified.has(g.sourceId));
-const comparable=x=>({
-  timezone:x?.timezone||'Europe/Madrid',
-  games:x?.games||[],
-  status:x?.status||[]
-});
-
-if(JSON.stringify(comparable(old))!==JSON.stringify(comparable(data))){
-  fs.writeFileSync(outPath,JSON.stringify(data,null,2)+'\n');
-  console.log('UPDATED');
-}else{
-  console.log('NO_CHANGE');
+import {buildSnapshot} from '../lib/sidgad.js';
+import {weeklySlot} from '../lib/schedule.js';
+const file=new URL('../data/games.json',import.meta.url);
+const previous=JSON.parse(fs.readFileSync(file,'utf8'));
+const now=new Date(),slot=weeklySlot(now);
+const initial=process.argv.includes('--initial');
+if(!initial&&(!slot||previous.weeklySlot===slot)){
+  console.log('SKIPPED: outside Thursday after 12:00 Madrid, or this week already checked.');
+  process.exit(0);
 }
-
-for(const s of data.status||[]){
-  console.log(s.id,s.ok?'OK':'ERROR',s.games??'',s.error??'');
-}
+const input=JSON.parse(fs.readFileSync(0,'utf8'));
+if(!Array.isArray(input.captures))throw new Error('Expected {captures:[...]}');
+const snapshot=buildSnapshot(previous,input.captures,now.toISOString());
+if(!initial)snapshot.weeklySlot=slot;
+fs.writeFileSync(new URL('../data/games.json.tmp',import.meta.url),JSON.stringify(snapshot,null,2)+'\n');
+fs.renameSync(new URL('../data/games.json.tmp',import.meta.url),file);
+for(const s of snapshot.status)console.log(s.id,s.ok?'OK':'RETAINED',s.games,s.error||'');
